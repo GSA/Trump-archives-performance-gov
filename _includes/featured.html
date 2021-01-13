@@ -1,0 +1,48 @@
+<!--FOR THE FEATURED NEWS SECTION ON THE PERFORMANCE-NEWS PAGE. -->
+
+{% assign card_link = include.link | prepend: site.baseurl %}
+
+
+<div class="container" href="{{ card_link }}">
+  <img
+  class="card-image-featured"
+  style="width:100%;object-fit:cover;"
+  src="{{ site.baseurl }}{{ include .image_src }}" \>
+  <div class="content">
+
+        <!--{% if include.agency %}
+      <p class="card-tag">{{ include.agency }}</p>
+    {% endif %}-->
+    {% if include.agency %}
+      <p class="card-tag">{{ include.agency }}</p>
+    {% endif %}
+    {% if card_link and include.tagline %}
+      <a href="{{ card_link }}" tabindex="-1" class="card-link-tagline"><h3 id="featured">
+        <span style="color:#ffffff;">
+        {{ include.tagline }}
+        </span>
+      </h3>
+      </a>
+    {% endif %}
+
+    <div id="left">
+    {% if include.date %}
+      <div class="card-date-featured" >{{ include.date | date: '%B %d, %Y' }}
+      </div>
+    {% endif %}
+    </div>
+
+    <div id="right">
+      <span class="card-tag-text" style="color:#ffffff;">Tags:</span>
+    {% for tag in include.tags %}
+      {% unless tag == 'sharing' or tag == 'IT' or tag == 'data' or tag == 'workforce' or tag == 'cx' or tag == 'low-to-high' or tag == 'cm' or tag == 'grants' or tag == 'payments' or tag == 'spending' or tag == 'acquisition' or tag == 'infrastructure' or tag == 'credentialing' or tag == 'lab' %}
+        <span class="usa-label" >
+          <a style="color:#ffffff;" href="{{ site.baseurl }}/tags/{{ tag}}/">{{ tag }}
+          </a>
+        </span>
+      {% endunless %}
+      {% endfor %}
+    </div>
+      <!--<p style="color:#ffffff;" class="card-description">{{ include.description }}</p>-->
+  </div>
+</div>

@@ -1,0 +1,72 @@
+---
+title: "Test"
+layout: navigation_PMA
+
+---
+<section style="background-color: #aeb0b5;" class="usa-section usa-graphic_list">
+  <div class="usa-grid usa-graphic_list-row">
+    <div class="usa-width-one-whole usa-media_block">
+        <h1 style="line-height:2.3;"><img src="../img/GoG/GoG-logo.png" style="width:100px;float:left;margin-right:15px;">
+      Gears of Government Awards</h1>
+    <!--<p>Cultivating and Championing Excellence in Federal Service</p>-->
+  </div>
+</div>
+</section>
+
+<section class="usa-section usa-graphic_list">
+ <div class="usa-grid usa-graphic_list-row">
+   <div class="usa-width-one-whole usa-media_block ">
+  <h3>Hall of Winners</h3>
+     <p>The Gears of Government Awards recognize individuals and teams across the Federal workforce whose dedication supports exceptional delivery of key outcomes for the American people, specifically mission, stewardship, and customer service.</p>
+     <p><i>Use the dropdown buttons to select between agencies, stories, are show all. View more information about each winner by hoverings, or clicking, on each winner's card.</i></p>
+
+    {% include button-group.html %}
+  </div>
+  </div>
+  </section>
+
+<section class="usa-section usa-graphic_list">
+ <div class="usa-grid usa-graphic_list-row">
+<div class="usa-width-one-whole usa-media_block ">
+<div class="main-iso">
+{% for GoG_winners in site.GoG_winners %}
+<div class="usa-width-one-fourth usa-media_block item {{ GoG_winners.category }} {{ GoG_winners.story }}"   style="margin-right:0;margin-bottom:15px;margin-left:10px;">
+  <div class="container">
+  <img class="card-image-gog" src="{{ site.baseurl }}{{ GoG_winners.image }}" alt="Avatar" class="image">
+  <div class="winner-text">
+    <div id="left">
+    <p class="name-text" style="margin-bottom:7px;"><b>{{ GoG_winners.name}}</b>
+    <!--<i>{{ GoG_winners.title}}</i>{{ GoG_winners.award }} Award--></p>
+    <p style="margin-top:0;" class="card-tag">{{ GoG_winners.agency }}</p>
+  </div> <!--close left div-->
+  <div id="right">
+     <img
+        src="{{ site.baseurl }}{{ GoG_winners.banner }}"
+        style="height:60px;float:right;">
+  </div><!--close right div-->
+</div><!--close winner text-->
+  <div class="overlay">
+    <div class="text">
+      <p><b>{{ GoG_winners.name}}, <br></b>
+            <i>{{ GoG_winners.title}}</i></p>
+          <p>{{ GoG_winners.description }}</p>
+          <p><b>{{ GoG_winners.award }} Award</b></p>
+    </div>
+  </div>
+  </div>
+</div>
+{% endfor %}
+</div>
+</div>
+</div>
+</section>
+
+
+
+<!--    Javascript files are here... -->
+<!--Jquery CDN -->
+<script src="{{ site.baseurl }}/js/jquery.min.js"></script>
+<!--isotope here...-->
+<script src="{{ site.baseurl }}/js/isotope.pkgd.min.js"></script>
+<!--Custom Js file here ... -->
+<script src="{{ site.baseurl }}/js/script.js"></script>

@@ -1,0 +1,151 @@
+<!--********Generates policy catalog items. Individual cards live in the in the _policies folder**************-->
+
+<div class="usa-width-three-fourths usa-media_block ">
+  <p class="filter-count card-tag margin-top-0 text-gray-50"></p>
+  <div class="2020-winners">
+
+    {% for 2020_GoG_winners in site.2020_GoG_winners %}
+     {% if 2020_GoG_winners.award == "President's" %}
+    <div class="usa-width-one-third winner {{ 2020_GoG_winners.filters }} {{ GoG_winners.category }} {{ GoG_winners.story }}" style="height:300px;">
+      <a href="{{site.baseurl}}{{2020_GoG_winners.link}}" style="text-decoration:none;color:black">
+        <img style="margin-bottom: -10px;" src="{{ site.baseurl }}/img/{{ 2020_GoG_winners.image }}">
+        <p style="text-align:center"><b>{{ 2020_GoG_winners.name}}</b><br>
+          <span style="text-align:center">{{ 2020_GoG_winners.agency }}</span></p>
+      </a>
+      <!--<p style="font-size:.8em;">{{ GoG_winners.description }}</p>-->
+    </div>
+    {% endif %}
+    {% endfor %}
+
+<br>
+
+    {% for 2020_GoG_winners in site.2020_GoG_winners %}
+    {% if 2020_GoG_winners.award  == "Agency" or 2020_GoG_winners.award  == "Council" %}
+
+      <div class="usa-width-one-third winner {{ 2020_GoG_winners.filters }} ">
+      <div class="container-GoG" tabindex="0">
+        {% if 2020_GoG_winners.image and 2020_GoG_winners.originalImage %}
+        <center><img class="card-image-gog" src="{{ site.baseurl }}/img/{{ 2020_GoG_winners.image }}" alt="Avatar" class="image"></center>
+        {% elsif 2020_GoG_winners.image %}
+        <center><img class="card-image-gog-team gray" src="{{ site.baseurl }}/img/{{ 2020_GoG_winners.image }}" alt="Avatar" class="image"></center>
+        {% else %}
+        <img class="card-image-gog-team-award gray" src="{{ site.baseurl }}/img/GoG/banners/agency-background.png" alt="Avatar" class="image">
+        {% endif %}
+        <div class="winner-text-team">
+          <div id="winner-left">
+            <p class="name-text" style="margin-bottom:0px;line-height:1;"><b>{{ 2020_GoG_winners.name }}</b></p>
+            {% if 2020_GoG_winners.tag %}
+            <span class="gog-agency-text"><b>{{ 2020_GoG_winners.tag }}</b></span>
+            {% endif %}
+            {% if 2020_GoG_winners.tag-2 %}
+            <span class="gog-agency-text"><b>{{ 2020_GoG_winners.tag-2 }}</b></span>
+            {% endif %}
+            {% if 2020_GoG_winners.tag-3 %}
+            <span class="gog-agency-text"><b>{{ 2020_GoG_winners.tag-3 }}</b></span>
+            {% endif %}
+            {% if 2020_GoG_winners.tag-4 %}
+            <span class="gog-agency-text"><b>{{ 2020_GoG_winners.tag-4 }}</b></span>
+            {% endif %}
+            {% if 2020_GoG_winners.tag-5 %}
+            <span class="gog-agency-text"><b>{{ 2020_GoG_winners.tag-5 }}</b></span>
+            {% endif %}
+            {% if 2020_GoG_winners.tag-6 %}
+            <span class="gog-agency-text"><b>{{ 2020_GoG_winners.tag-6 }}</b></span>
+            {% endif %}
+            {% if 2020_GoG_winners.tag-7 %}
+            <span class="gog-agency-text"><b>{{ 2020_GoG_winners.tag-7 }}</b></span>
+            {% endif %}
+
+
+
+
+
+            <!--    team awards below-->
+            {% if 2020_GoG_winners.team-names and 2020_GoG_winners.team %}
+            {% if 2020_GoG_winners.agency %}
+            <span class="gog-agency-text"><b>{{ 2020_GoG_winners.agency }}</b></span>
+            {% endif %}
+
+                <ul style="padding-left:0;margin-top:5px;">
+                  <!--            Short team awards below-->
+                  {% if 2020_GoG_winners.length == "short" %}
+                    {% for item in 2020_GoG_winners.team-names %}
+                    <li class="team">{{ item }}</li>
+                    {% endfor %}
+                  <div class="overlay">
+                    <div class="text" tabindex="0">
+                      <p style="margin-top:0;"><b>{{ 2020_GoG_winners.name}}</b>
+                      <p class="description-2020">{{ 2020_GoG_winners.description }}</p>
+                      {% if 2020_GoG_winners.award == "Agency" %}
+                      <p id="agency-winner-border"><b>{{ 2020_GoG_winners.award }} Award</b></p>
+                      {% elsif 2020_GoG_winners.award == "Council" %}
+                      <p id="council-winner-border"><b>{{ 2020_GoG_winners.award }} Award</b></p>
+                      {% elsif 2020_GoG_winners.award == "President's" %}
+                      <p id="president-winner-border"><b>{{ 2020_GoG_winners.award }} Award</b></p>
+                      {% endif %}
+                    </div><!--close text-->
+                  </div><!--close overlay-->
+
+<!--            Long team awards below-->
+                  {% else %}
+
+
+                  <a href="#openModal{{ 2020_GoG_winners.modal }}" class="team" style="text-decoration:none;line-height:1.3;"> Click here to view more information.</a>
+                </ul>
+            {% include GoG-modal-2020.html %}
+                {% endif %}
+
+
+<!--      Individual awards below-->
+            {% else %}
+            <p style="margin-top:0;margin-bottom:0;" class="card-tag"><b>{{ 2020_GoG_winners.agency}}</b></p>
+            <div class="overlay">
+              <div class="text" tabindex="0">
+                <p style="margin-top:0;"><b>{{ 2020_GoG_winners.name}}</b>
+                <p class="description-2020">{{ 2020_GoG_winners.description }}</p>
+                {% if 2020_GoG_winners.award == "Agency" %}
+                <p id="agency-winner-border"><b>{{ 2020_GoG_winners.award }} Award</b></p>
+                {% elsif 2020_GoG_winners.award == "Council" %}
+                <p id="council-winner-border"><b>{{ 2020_GoG_winners.award }} Award</b></p>
+                {% elsif 2020_GoG_winners.award == "President's" %}
+                <p id="president-winner-border"><b>{{ 2020_GoG_winners.award }} Award</b></p>
+                {% endif %}
+              </div><!--close text-->
+            </div><!--close overlay-->
+
+            {% endif %}
+
+          </div>
+
+
+
+
+
+
+
+
+          <div id="right">
+           <img
+            src="{{ site.baseurl }}/img/GoG/banners/{{2020_GoG_winners.banner}}-banner.png"
+            style="height:75px;float:right;margin-top: -32px;"><br>
+          </div><!--close right div-->
+<!--            <div class="overlay">-->
+<!--              <div class="text">-->
+<!--                <p style="margin-top:0;"><b>{{ 2020_GoG_winners.name}}</b>-->
+<!--                    <p class="description-2020">{{ 2020_GoG_winners.description }}</p>-->
+<!--                  {% if 2020_GoG_winners.award == "Agency" %}-->
+<!--                    <p id="agency-winner-border"><b>{{ 2020_GoG_winners.award }} Award</b></p>-->
+<!--                  {% elsif 2020_GoG_winners.award == "Council" %}-->
+<!--                    <p id="council-winner-border"><b>{{ GoG_winners.award }} Award</b></p>-->
+<!--                  {% elsif 2020_GoG_winners.award == "President's" %}-->
+<!--                    <p id="president-winner-border"><b>{{ 2020_GoG_winners.award }} Award</b></p>-->
+<!--                  {% endif %}-->
+<!--              </div>&lt;!&ndash;close text&ndash;&gt;-->
+<!--            </div>&lt;!&ndash;close overlay&ndash;&gt;-->
+        </div>
+      </div>
+      </div>
+       {% endif %}
+    {% endfor %}
+  </div>
+</div>

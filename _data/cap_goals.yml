@@ -1,0 +1,66 @@
+- title: Cybersecurity
+  updated: (Updated September 2019)
+  kpi_url: https://d2d.gsa.gov/tableau-report-for-embed/7861
+  pdf_url: /CAP/KPI_Cybersecurity_FY2018_Q2.pdf
+  img: /CAP/KPI/cybersecurity-image.JPG
+  url: /CAP/it-mod/
+  name: IT Modernization
+  CAP-url: /CAP/it-mod/
+  data_url: /CAP/KPI/Cybersecurity_KPI Data_FY19Sept.xlsx
+
+
+- title: Category Management
+  updated: (Updated June 2019)
+  kpi_url: https://d2d.gsa.gov/tableau-report-for-embed/8221
+  pdf_url: /CAP/KPI_Category_Management_FY2019_Q2.pdf
+  img: /CAP/KPI/category-management-image.JPG
+  url: /CAP/category-management/
+  name: Category Management
+  CAP-url: /CAP/category-management/
+  data_url: /CAP/KPI/CM_sample_data.csv
+
+
+- title: Federal Employee Viewpoint Survey
+  updated: (Updated December 2018)
+  kpi_url: https://d2d.gsa.gov/tableau-report-for-embed/7865
+  pdf_url: /CAP/EVS_Final_Round.pdf
+  img: /CAP/EVS_Final_Round-1.JPG
+  url: /CAP/workforce/
+  name: Workforce for the 21st Century
+  CAP-url: /CAP/workforce/
+  data_url: /CAP/KPI/Federal Employee Viewpoint Survey_KPI Data_FY18Q4.xlsx
+
+
+
+- title: Customer Satisfaction Scores
+  updated: (Updated September 2019)
+  kpi_url:  https://d2d.gsa.gov/tableau-report-for-embed/7864
+  pdf_url: /CAP/Customer_Satisfaction_Scores.pdf
+  img: /CAP/KPI/customer-satisfaction-image.JPG
+  url: /CAP/sharing-quality-services/
+  name: Sharing Quality Services
+  CAP-url: /CAP/sharing-quality-services/
+  data_url: /CAP/KPI/Customer Satisfaction Survey_KPI Data_FY18Sept.xlsx
+
+
+- title: Cash Loss to the Government
+  updated: (Updated September 2019)
+  kpi_url: https://d2d.gsa.gov/tableau-report-for-embed/7867
+  pdf_url: /CAP/Improper_Payments.pdf
+  img: /CAP/KPI/cash-loss-image.JPG
+  url: /CAP/getting-payments-right/
+  name: Getting Payments Right
+  CAP-url: /CAP/getting-payments-right/
+  data_url: /CAP/KPI/Cash_Loss_Government_KPI_Data_Sept2019.xlsx
+
+
+
+- title: Cloud Email Adoption
+  updated: (Updated September 2019)
+  kpi_url: https://d2d.gsa.gov/tableau-report-for-embed/7863
+  pdf_url: /CAP/KPI_Cloud_Email_Adoption_Q3.pdf
+  img: /CAP/KPI/cloud-email.JPG
+  url: /CAP/it-mod/
+  name: IT Modernization
+  CAP-url: /CAP/it-mod/
+  data_url: /CAP/KPI/Cloud Email Adoption_KPI Data_FY19Sept.xlsx

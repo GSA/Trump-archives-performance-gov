@@ -1,0 +1,194 @@
+---
+layout: navigation
+---
+
+<!--beginning of side navigation code-->
+    <aside class="usa-width-one-fourth usa-layout-docs-sidenav">
+      <ul class="usa-sidenav-list">
+
+<!--beginning of side navigation for State/USAID only-->
+{% if page.agency-name == "Department of State and United States Agency for International Development" %}
+      <li>
+      <a class="usa-current" href="state.html">Department of State and USAID</a>
+      </li>
+      <li>
+      <a href="APG_state_1.html">State Agency Priority Goals</a>
+      <ul class="usa-sidenav-sub_list">
+      <li>
+      <a href="{{site.baseurl}}/state/APG_state_1.html">IT Modernization</a>
+      </li>
+       <li>
+      <a href="{{site.baseurl}}/state/APG_state_2.html"> Category Management</a>
+      </li>
+      <li>
+      <a href="{{site.baseurl}}/state/APG_state_3.html">Data Informed Diplomacy</a>
+      </li>
+      <li>
+      <a href="{{site.baseurl}}/state/APG_state_4.html">Enhancing Security Monitoring Solutions</a>
+      </li>
+      </ul>
+      </li><li>
+      <a href="APG_usaid_1.html">USAID Agency Priority Goals</a>
+      <ul class="usa-sidenav-sub_list">
+      <li>
+      <a href="{{site.baseurl}}/state/APG_usaid_1.html">Category Management</a>
+      </li>
+      <li>
+      <a href="{{site.baseurl}}/state/APG_usaid_2.html">Effective Partnering and Procurement Reform</a>
+      </li>
+      <li>
+      <a href="{{site.baseurl}}/state/APG_usaid_3.html">Maternal and Child Health</a>
+      </li>
+      <li>
+      <a href="{{site.baseurl}}/state/APG_usaid_4.html">Private-Sector Engagement</a>
+      </li>
+      <li>
+          <a href="{{site.baseurl}}/state/APG_usaid_5.html">Resilience and Food Security</a>
+      </li>
+
+      </ul>
+      </li><li>
+      <a href="APG_joint_1.html">Joint Agency Priority Goals</a>
+
+      <ul class="usa-sidenav-sub_list">
+      <li>
+      <a href="{{site.baseurl}}/state/APG_joint_1.html">HIV/AIDS</a>
+      </li>
+{% else %}
+<!--end of side navigation for State/USAID-->
+
+<!-- beginning of side navigation for all agency pages except State/USAID-->
+        <li>
+          <a class="usa-current" href="{{ page.permalink }}">{{ page.agency-name }}</a>
+        </li>
+        <li>
+          <a href="{{ page.apg-1-link }}">Agency Priority Goals</a>
+          <ul class="usa-sidenav-sub_list">
+          {% if page.apg-1-link %}
+            <li>
+              <a href="{{ page.apg-1-link }}">{{ page.apg-1 }} </a>
+            </li>
+          {% endif %}
+            {% if page.apg-2-link %}
+            <li>
+              <a href="{{ page.apg-2-link }}">{{ page.apg-2 }}</a>
+            </li>
+            {% endif %}
+            {% if page.apg-3-link %}
+            <li>
+              <a href="{{ page.apg-3-link }}">{{ page.apg-3 }}</a>
+            </li>
+            {% endif %}
+            {% if page.apg-4-link %}
+            <li>
+              <a href="{{ page.apg-4-link }}">{{ page.apg-4 }}</a>
+            </li>
+            {% endif %}
+            {% if page.apg-5-link %}
+            <li>
+              <a href="{{ page.apg-5-link }}">{{ page.apg-5 }}</a>
+            </li>
+            {% endif %}
+            {% if page.apg-6-link %}
+            <li>
+              <a href="{{ page.apg-6-link }}">{{ page.apg-6 }}</a>
+            </li>
+            {% endif %}
+            {% if page.apg-7-link %}
+            <li>
+              <a href="{{ page.apg-7-link }}">{{ page.apg-7 }}</a>
+            </li>
+            {% endif %}
+          </ul>
+
+      </li>
+{% endif %}
+
+    </ul>
+<!--end of side navigation code-->
+
+
+    </aside>
+    <div class="usa-width-three-fourths usa-layout-docs-main_content">
+      <h1>{{ page.agency-name }} &nbsp;<a href="{{ page.agency-site }}" target="_blank"><img src="{{ page.agency-seal }}" alt="agency seal" align="center" width="87"></a>
+<!--beginning of second seal for USAID-->
+      {% if page.agency-name == "Department of State and United States Agency for International Development" %}
+      <a href="{{ page.agency-site-2 }}" target="_blank"><img src="{{ page.agency-seal-2 }}" alt="agency seal" align="center" width="87"> </a>
+      {% endif %}
+<!--end of second seal for USAID-->
+      </h1>
+
+
+      <section class="usa-section">
+        <div class="usa-grid usa-graphic_list-row">
+          <div class="usa-width-one-whole usa-media_block">
+            <h2 style="color:#046b99;padding-bottom:1rem;">Agency Plans and Reports</h2>
+              </div>
+            </div>
+          <div class="usa-grid usa-graphic_list-row">
+            <div class="usa-width-one-third usa-media_block agency-page-link">
+          <h3 class="agency-link-title"><center>Agency's Strategic Plan</center></h3>
+          <div class="agency-link-banner">
+              <center><a href="{{ page.strategic-plan-link }}" target="_blank"><img src="..\img\icon-1.png" alt="icon" width="87"> </a></center>
+            </div>
+    <div class="agency-link-learnmore">
+<!--beginning of strategic plan buttons for State/USAID-->
+      {% if page.agency-name == "Department of State and United States Agency for International Development" %}
+        <center><p class="card-tag" style="margin-top:0;margin-bottom:30px;font-size:.7em;"><a style="text-decoration:none;background-color:#ffffff;color:#212121;padding:10px;box-shadow: inset 0 0 0 2px #fdb81e;border-radius:25px;"  href="{{ page.strategic-plan-link }}" target="_blank">READ THE STATE PLAN &#10095;</a></p></center>
+        <center><p class="card-tag" style="margin-top:0;margin-bottom:30px;font-size:.7em;"><a style="text-decoration:none;background-color:#ffffff;color:#212121;padding:10px;box-shadow: inset 0 0 0 2px #fdb81e;border-radius:25px;"  href="{{ page.strategic-plan-link-2 }}" target="_blank">READ THE USAID PLAN &#10095;</a></p></center>
+        <center><p class="card-tag" style="margin-top:0;margin-bottom:30px;font-size:.7em;"><a style="text-decoration:none;background-color:#ffffff;color:#212121;padding:10px;box-shadow: inset 0 0 0 2px #fdb81e;border-radius:25px;"  href="{{site.baseurl}}{{page.strategic-objective-link}}" target="_blank">Strategic Objectives &#10095;</a></p></center>
+
+        {% elsif page.agency-name == "Department of Energy" %}
+      <center><p class="card-tag" style="margin-top:0;margin-bottom:30px;font-size:.7em;"><a style="text-decoration:none;background-color:#ffffff;color:#212121;padding:10px;box-shadow: inset 0 0 0 2px #fdb81e;border-radius:25px;"  href="{{ page.strategic-plan-link }}" target="_blank">READ THE PLAN &#10095;</a></p></center>
+        {% else %}
+<!--end of strategic plan buttons for State/USAID-->
+
+        <center><p class="card-tag" style="margin-top:0;margin-bottom:30px;font-size:.7em;"><a style="text-decoration:none;background-color:#ffffff;color:#212121;padding:10px;box-shadow: inset 0 0 0 2px #fdb81e;border-radius:25px;"  href="{{ page.strategic-plan-link }}" target="_blank">READ THE PLAN &#10095;</a></p></center>
+        <center><p class="card-tag" style="margin-top:0;margin-bottom:30px;font-size:.7em;"><a style="text-decoration:none;background-color:#ffffff;color:#212121;padding:10px;box-shadow: inset 0 0 0 2px #fdb81e;border-radius:25px;"  href="{{site.baseurl}}{{page.strategic-objective-link}}" target="_blank">Strategic Objectives &#10095;</a></p></center>
+      {% endif %}
+            </div>
+      </div>
+
+      <div class="usa-width-one-third usa-media_block agency-page-link">
+        <h3 class="agency-link-title"><center>Agency’s Performance Plan and Report</center></h3>
+        <div class="agency-link-banner">
+        <center><a href="{{ page.performance-plan-link }}" target="_blank"><img src="..\img\icon-2.png" alt="icon" width="87"> </a></center>
+      </div>
+        <div class="agency-link-learnmore">
+
+<!--beginning of performance plan buttons for State/USAID-->
+      {% if page.agency-name == "Department of State and United States Agency for International Development" %}
+        <center><p class="card-tag" style="margin-top:0;margin-bottom:30px;font-size:.7em;"><a style="text-decoration:none;background-color:#ffffff;color:#212121;padding:10px;box-shadow: inset 0 0 0 2px #fdb81e;border-radius:25px;"  href="{{ page.performance-plan-link }}" target="_blank">READ THE STATE PLAN &#10095;</a></p></center>
+        <center><p class="card-tag" style="margin-top:0;margin-bottom:30px;font-size:.7em;"><a style="text-decoration:none;background-color:#ffffff;color:#212121;padding:10px;box-shadow: inset 0 0 0 2px #fdb81e;border-radius:25px;"  href="{{ page.performance-plan-link-2 }}" target="_blank">READ THE USAID PLAN &#10095;</a></p></center>
+      {% elsif page.agency-name == "General Services Administration" or page.agency-name == "Small Business Administration" %}
+        <center><p class="card-tag" style="margin-top:0;margin-bottom:30px;font-size:.7em;"><a style="text-decoration:none;background-color:#ffffff;color:#212121;padding:10px;box-shadow: inset 0 0 0 2px #fdb81e;border-radius:25px;"  href="{{ page.performance-plan-link }}" target="_blank">READ THE PLAN &#10095;</a></p></center>
+        <center><p class="card-tag" style="margin-top:0;margin-bottom:30px;font-size:.7em;"><a style="text-decoration:none;background-color:#ffffff;color:#212121;padding:10px;box-shadow: inset 0 0 0 2px #fdb81e;border-radius:25px;"  href="{{ site.baseurl }}/data/" target="_blank">VIEW THE DATA &#10095;</a></p></center>
+    {% else %}
+<!--end of performance plan buttons for State/USAID-->
+        <center><p class="card-tag" style="margin-top:0;margin-bottom:30px;font-size:.7em;"><a style="text-decoration:none;background-color:#ffffff;color:#212121;padding:10px;box-shadow: inset 0 0 0 2px #fdb81e;border-radius:25px;"  href="{{ page.performance-plan-link }}" target="_blank">READ THE PLAN &#10095;</a></p></center>
+      {% endif %}
+                </div>
+              </div>
+
+
+        <div class="usa-width-one-third usa-media_block agency-page-link">
+          <h3 class="agency-link-title"><center>Agency Priority Goals</center></h3>
+          <div class="agency-link-banner">
+          <center><a href="{{ page.apg-1-link }}" ><img src="..\img\icon-3.png" alt="icon" width="87"> </a></center>
+        </div>
+          <div class="agency-link-learnmore">
+
+        <center><p class="card-tag" style="margin-top:0;margin-bottom:30px;font-size:.7em;"><a style="text-decoration:none;background-color:#ffffff;color:#212121;padding:10px;box-shadow: inset 0 0 0 2px #fdb81e;border-radius:25px;"  href="{{ page.apg-1-link }}">2020-2021 APGs &#10095;</a></p></center>
+        <center><p class="card-tag" style="margin-top:0;margin-bottom:30px;font-size:.7em;"><a style="text-decoration:none;background-color:#ffffff;color:#212121;padding:10px;box-shadow: inset 0 0 0 2px #fdb81e;border-radius:25px;"  href="{{site.baseurl}}{{page.archive-link}}">2018-2019 APGs &#10095;</a></p></center>
+
+        </div>
+      </div>
+    </div>
+
+{{ content }}
+<br>
+<br>
+
+
+
+        </div>

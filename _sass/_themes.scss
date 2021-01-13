@@ -1,0 +1,149 @@
+
+/*grid for themes*/
+/* old grid
+.grid {
+ position: relative;
+ display: grid;
+ grid-gap: 10px;
+ grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+ margin-right: 7rem;
+ margin-left: 7rem;
+ padding: 2% 0;
+}*/
+
+.grid {
+ position: relative;
+ display: grid;
+ grid-gap: 10px;
+ grid-template-columns: repeat(auto-fit, minmax(145px, 1fr));
+ margin-right: 7rem;
+ margin-left: 7rem;
+ padding: 2% 0;
+}
+
+@media screen and (min-width: 800px) {
+ .grid {
+   width: 1200px;
+   margin-left: auto ;
+   margin-right: auto ;
+   padding: 0 0;
+ }
+}
+
+.flex-center {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ height: 90px;
+ resize: vertical;
+
+
+}
+
+#ltblue-grid {
+ background: #0071bc;
+ color: #ffffff;
+ font-size: 1.5rem;
+ text-align: center;
+ margin: 6px;
+ height: 90px;
+ padding: 3.5px;
+}
+
+#ltblue-grid:hover {
+ background: #ffffff;
+ color: #0071bc;
+
+}
+
+#ltblue-grid:hover a {
+ background: #ffffff;
+ color: #0071bc;
+}
+
+
+#ltblue-grid a {
+ color: #ffffff;
+ text-decoration: none;
+}
+
+#blue-grid {
+ background: #205493;
+ color: #ffffff;
+ font-size: 1.5rem;
+ text-align: center;
+ margin: 6px;
+ height: 90px;
+ padding: 3px;
+
+}
+#blue-grid:hover {
+ background: #ffffff;
+ color: #0071bc;
+
+}
+#blue-grid:hover a {
+ background: #ffffff;
+ color: #205493;
+
+}
+#blue-grid a {
+ color: #ffffff;
+ text-decoration: none;
+
+}
+#brblue-grid {
+ background: #00a6d2;
+ color: #ffffff;
+ font-size: 1.5rem;
+ text-align: center;
+ height: 90px;
+ margin: 6px;
+ padding: 3px;
+}
+
+#brblue-grid:hover {
+ background: #ffffff;
+ color: #0071bc;
+
+}
+
+
+#brblue-grid:hover a {
+ background: #ffffff;
+ color: #00a6d2;
+
+}
+#brblue-grid a {
+ color: #ffffff;
+ text-decoration: none;
+
+}
+
+#ukblue-grid {
+ background: #046b99;
+ color: #ffffff;
+ font-size: 1.5rem;
+ text-align: center;
+ height: 90px;
+ margin: 6px;
+ padding: 3px;
+}
+
+#ukblue-grid:hover {
+ background: #ffffff;
+ color: #0071bc;
+}
+
+#ukblue-grid:hover a {
+ background: #ffffff;
+ color: #046b99;
+
+}
+
+#ukblue-grid a {
+ color: #ffffff;
+ text-decoration: none;
+
+
+}

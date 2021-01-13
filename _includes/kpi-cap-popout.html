@@ -1,0 +1,19 @@
+{% assign width = include.width | default: 400 %}
+{% assign figure_url = include.kpi_url | default: include.pdf_url %}
+<div class="kpi-popout {{ include.class }}">
+  <h4>{{ include.title }}<br>
+    {% if include.updated %} <span style="font-size:1em;font-weight:normal;">{{ include.updated }}</span>{% endif %}
+   </h4>
+  <figure>
+    <a href="{{ figure_url | relative_url }}" target="_blank"><img src="{{ include.img | relative_url }}" alt="{{ include.title }}" width="{{ width }}px" ></a>
+  </figure>
+  {% if include.CAP-url %}
+    <a class="kpi-popout-link" href="{{ include.CAP-url | relative_url }}">See the CAP Goal</a> |
+  {% endif %}
+  {% if cap_goal.title == "Category Management" %}
+  <a class="kpi-popout-link" href="{{ figure_url | relative_url }}" target="_blank">View the Dashboard </a>
+  {% else %}
+  <a class="kpi-popout-link" href="{{ figure_url | relative_url }}" target="_blank">View the Dashboard </a>|
+  <a class="kpi-popout-link" href="{{ include.data_url | relative_url }}">Download Data </a>
+  {% endif %}
+</div>

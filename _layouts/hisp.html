@@ -1,0 +1,142 @@
+---
+layout: base_chartjs
+---
+
+{% for hisp in site.data.hisps %}
+{% if hisp.service_id == page.hisp_service_id %}
+  {% assign this_hisp = hisp %}
+{% endif %}
+{% endfor %}
+
+{% for hisp_data in site.data.hisp-data %}
+{% if hisp_data.service_id == page.hisp_service_id %}
+  {% assign this_hisp_data = hisp_data %}
+{% endif %}
+{% endfor %}
+
+{% if this_hisp.service == this_hisp.bureau %}
+  {% assign hisp_bureau_display = '' %}
+{% else %}
+  {% capture hisp_bureau_display %}{{ this_hisp.bureau }}, {% endcapture %}
+{% endif %}
+
+
+{% include main_header.html %}
+
+<script type="text/javascript">
+  var chartConfigs = {};
+  var cxCharts = {};
+</script>
+
+<header class="usa-header usa-header-basic cx-breadcrumb">
+  <div class="usa-grid">
+    <div class="usa-grid-full">
+      <a href="{{ site.baseurl }}/">Home</a> &nbsp; &gt; &nbsp;  <a href="{{ site.baseurl }}/cx/">Customer Experience</a> &nbsp;  &gt; &nbsp; {{ this_hisp.service }}
+    </div>
+  </div>
+</header>
+
+<main class="usa-content usa-layout-docs cx-hisp-profile" id="main-content">
+  <section class="usa-section usa-section-dark usa-graphic_list">
+     <div class="usa-grid usa-graphic_list-row">
+        <div class="usa-width-one-whole usa-media_block">
+          <div class="usa-media_block-body">
+
+            <div class="cx-profile-heading" markdown="1">
+              <div class="usa-width-one-fourth cx-agency-logo {{ this_hisp.department_abbreviation }}-logo">
+                <img style="width:50%;height:50%" src="{{ site.baseurl }}/img/cx/agencies/{{ this_hisp.department_abbreviation }}-{{ page.logo_type }}.png" alt="{{ this_hisp.department }} {{ page.logo_type }}">
+            </div>
+          </div>
+
+          <div class="cx-hisp-intro usa-width-three-fourths" markdown="1">
+            <h3 style="margin-bottom:0px;color:white;">{{ hisp_bureau_display }}{{ this_hisp.department }}</h3>
+            <h1 class="cx-profile-headline cx-agency-heading" style="margin-top:0px;margin-bottom:10px">{{ this_hisp.service }}</h1>
+            <hr style="width:18%;float:left;marin-top:0px;margin-bottom:17px;">
+            <h3 style="color:white;" class="cx-profile-headline">{{ page.hisp_profile_headline }}</h3>
+            <a class="usa-button usa-button-secondary" href="#cx-charts-{{ this_hisp.service_id }}">View the latest Charts</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="usa-section">
+    <div class="usa-grid">
+      <div class="usa-width-one-whole">
+        <p>
+          {{ this_hisp.blurb }}
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="usa-section usa-prose">
+    <div class="usa-grid">
+      <div class="usa-width-one-whole">
+        <h3>
+          CX Plans and Progress
+        </h3>
+        <p>
+          Service design artifacts to support
+          Customer Experience planning and change management.
+          Each agency generates operational data;
+          including web traffic and customer feedback.
+        </p>
+        <p>
+          <ul>
+            <li>
+              <a href="{{ site.baseurl }}/cx/dashboard/actionplans/2019/2019-hisp-action-plan-{{ this_hisp.service_id }}.pdf" target="_blank" rel="noopener">2019 Action Plan</a>
+            </li>
+            <li>
+              <a href="{{ site.baseurl }}/cx/dashboard/actionplans/2020/2020-hisp-action-plan-{{ this_hisp.service_id }}.pdf" target="_blank" rel="noopener">2020 Action Plan</a>
+            </li>
+          </ul>
+        </p>
+        <h4>
+          Progress
+        </h4>
+        <p>
+          <a href="#cx-charts">View CX Feedback Data</a>
+          <br>
+          <a href="#dap-data">Digital Analytics Data</a>
+          <br>
+          <a href="#operational-data">Operational Data</a>
+          <br>
+          <a href="#notes">Reporting Notes</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="usa-grid">
+      <div class="usa-width-one-whole">
+        {% include cx/chartjs.html %}
+      </div>
+      <div class="usa-width-one-whole">
+        {% include cx/feedback-data.html this_hisp_data=this_hisp_data %}
+      </div>
+      <div class="usa-width-one-whole">
+        {% include cx/dap-data.html hisp=this_hisp %}
+      </div>
+
+      {{ content }}
+
+      <div>
+        <a id="notes"></a>
+        <h2 class="cx-section-heading">Reporting Notes</h2>
+        <ul>
+          <li>
+            CX Feedback Data: HISPs are currently in the process of aligning their customer feedback collections to seven government-wide CX measures. These measures align to specifically worded questions that agencies may make minimal changes to (to
+            ensure relevancy for their context) and be scored on a scale of 1 to 5, with 5 indicating strong agreement with a measure statement. Agencies that use a 10 point scale provide a calculation for converting results to a five point scale. Many are
+            collecting customer feedback under clearances that did not include a provision to share this data publicly. HISPs without the current capacity to collect and share data using the government-wide measures must identify a target date for reporting
+            of these metrics not to exceed FY 2021, Quarter 1.
+          </li>
+          <li>
+            Operational Data: HISPs were provided the opportunity to submit operational data in their quarterly reporting to OMB that provides context regarding their customers' experiences with their service.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+{% include main_footer.html %}

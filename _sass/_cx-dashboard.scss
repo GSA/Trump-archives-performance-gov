@@ -1,0 +1,327 @@
+.cx-profile-headline {
+	font-size : 1.5em;
+	font-weight : normal;
+	font-family : Merriweather,Georgia,Cambria,Times New Roman,Times,serif;
+}
+
+.cx-dashboard-heading,
+.cx-dashboard-heading-metric {
+	  font-family: Merriweather,Georgia,Cambria,Times New Roman,Times,serif;
+}
+
+.cx-heading-metrics .cx-dashboard-heading-metric {
+  display : inline-block;
+  width : 30%;
+  font-size : 1.5em;
+}
+
+.cx-hisp-tile {
+  display : inline-block;
+  clear : both;
+  width : 100%;
+  margin-bottom : 2em;
+}
+
+.cx-hisp-tile .cx-agency-logo {
+
+}
+
+.cx-hisp-tile .cx-hisp-intro {
+
+}
+
+.cx-agency-heading {
+	font-size : 1.8em;
+	font-weight : bold;
+	margin-bottom : 0;
+}
+
+.cx-agency-subheading {
+	margin-top : 0;
+}
+
+.cx-dashboard .cx-profile-heading {
+	margin-bottom : 3em;
+}
+
+.cx-section-heading {
+	color : #005EA2;
+	border-bottom :  2px solid #979797;
+	margin-top : 2em;
+}
+
+.cx-table {
+	float : none;
+}
+
+
+.cx-agency-logo {
+	text-align : center;
+}
+
+.cx-agency-logo img {
+width : 150px;
+height : 150px;
+}
+
+.cx-agency-logo-landing {
+	text-align : center;
+}
+
+.cx-agency-logo-landing img {
+width : 75px;
+height : 75px;
+}
+
+.cx-agency-logo.multi-logo img {
+	width: auto;
+	height: auto;
+}
+
+.cx-hisp-intro p {
+	border-left : 10px solid #F0F0F0;
+	padding-left : 1rem;
+}
+
+.cx-hisp-profile table {
+	display : block;
+	clear : both;
+	margin-bottom : 2em;
+}
+
+.cx-hisp-profile p {
+	clear : both;
+}
+
+.cx-hisp-profile table th, .cx-hisp-profile table td {
+	padding : .5em;
+	border : 1px solid black;
+}
+
+.survey-result-box {
+  width: 30%;
+  background-color: #F0F0F0;
+  border-left: 1rem solid #AAAEB1;
+  padding: 1rem;
+  display: inline-grid;
+  margin: 0 3% 2% 0;
+  min-height: 130px; }
+
+.survey-result-box.survey-no-data {
+  background-color : #fff;
+  border : .25rem solid #DCDEE0;
+  border-left: 1rem solid #DCDEE0;
+}
+
+.survey-no-data .survey-avg-score {
+	width : 100px;
+}
+
+.survey-result-stats {
+  margin-bottom: .5rem;
+  font-size: 2.2rem;
+  font-weight: 500; }
+
+.survey-avg-score {
+  color: #225E9D; }
+
+.survey-trend-arrow {
+  color: #479F68; }
+
+.survey-trend-arrow.survey-no-arrow {
+	display : none;
+}
+
+.survey-no-data .survey-avg-score {
+  color: #924C23;
+  font-size: 2rem; }
+
+.survey-no-data .survey-question {
+  color: #7F7F7F;
+}
+
+.cx-hisp-profile table {
+  width: 100%; }
+
+.cx-breadcrumb {
+	padding : .5rem;
+	background-color : #F0F0F0;
+}
+
+.cx-breadcrumb a,
+.cx-breadcrumb a:link {
+	text-decoration : none;
+}
+
+.survey-avg-score {
+  display: inline-block;
+  width : 20%;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700');
+
+:root {
+  --star-size: 20px;
+  --star-color: #666;
+  --star-background: #e7711b;
+}
+
+.star-rating {
+  --percent: calc(var(--rating) / 5 * 100%);
+
+  display: inline-block;
+  font-size: var(--star-size);
+  font-family: Montserrat, sans-serif;
+  line-height: 1;
+
+  &::before {
+    content: '★★★★★';
+    letter-spacing: 3px;
+    background: linear-gradient(90deg, var(--star-background) var(--percent), var(--star-color) var(--percent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+.HISP-border {
+	border-top:#162e51 solid 5px;
+	padding:7px;
+}
+
+.HISP-border h2 {
+	margin-top: 0;
+	color: #162e51;
+}
+
+.service-stat-examples .more-info-row {
+  padding-top : 2rem;
+}
+
+.card-service .list-topics span.text-muted,
+.card-service .list-topics a.text-muted {
+	background-color: white;
+}
+
+.usa-alert.cx-alert-stat {
+	border-left: 10px solid #CCC;
+	.usa-alert-body {
+		display: block;
+		padding: 0;
+
+		.percentage {
+			float: left;
+			font-size: 1.75em;
+			font-weight: 400;
+			text-align: center;
+			width: 70px;
+		}
+
+		.percentage2 {
+			font-size: 4.25rem;
+			font-weight: bold;
+			width: 100%;
+			text-align: center;
+		}
+
+		.category {
+			 float: right;
+			 width: calc(100% - 75px);
+
+			 .usa-alert-heading {
+				 font-size: 24px;
+			 }
+
+			 .usa-alert-text {
+				  font-size: 1.5rem;
+			 }
+		}
+
+		.category2 {
+			font-size: 3.25rem;
+			font-weight: bold;
+			text-align: center;
+			width: 100%;
+		}
+	}
+}
+
+.usa-alert.cx-alert-stat.highlight {
+	border-left: 10px solid #00BDE3;
+}
+
+.usa-alert.cx-alert-stat.warning {
+	border-left: 10px solid #ffbe2e;
+}
+
+.usa-alert.cx-alert-stat.error {
+	border-left: 10px solid #e52207;
+}
+
+.usa-alert.cx-alert-stat.success {
+	border-left: 10px solid #538200;
+}
+
+.usa-alert.cx-alert-stat.light-green {
+	border-left: 10px solid #a3b72c;
+}
+
+.usa-alert.cx-alert-stat.highlight {
+	.percentage {
+		color: black;
+		float: left;
+		font-size: 2.5em;
+		font-weight: 400;
+		width: 30%;
+	}
+
+	.category {
+		 width: 68%;
+	 }
+}
+
+.card-service .list-topics .complete {
+	background-color: #70e17b;
+}
+
+.cx-hero {
+	background-image: url("../img/cx/cx-header.jpg");
+	background-position: bottom;
+	min-height: 500px;
+
+	h1 {
+		font-size: 4.75rem;
+		line-height: 1.125em;
+	}
+}
+
+.cx-hero.projects-page {
+	background-image: url("../cx/images/cx-header-illustration-01.png");
+}
+
+// Custom Touchpoints tab styling
+#fba-button.fixed-tab-button.usa-button {
+	margin-bottom: 0;
+	font-size: 16px;
+}
+
+// from USWDS 2.9.1
+.usa-dark-background {
+	color: #FFFFFF;
+
+  p,
+  span {
+    color: #FFFFFF;
+  }
+
+  a {
+    color: #FFFFFF;
+
+    &:hover {
+      color: #FFFFFF;
+    }
+  }
+}
+
+.width-full{
+  width:100%;
+}

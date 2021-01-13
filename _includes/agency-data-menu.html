@@ -1,0 +1,137 @@
+<section class="usa-section usa-graphic_list" style="padding:0px;">
+    <ul id="accordion" class="accordion iso-nav" style="margin-left:0px;list-style-type:none;">
+
+      <div class="usa-grid usa-graphic_list-row" >
+      <div class="usa-width-one-third usa-media_block " style="margin-bottom:0px;">
+        <li>
+          <div class="link" tabindex="0">
+          <i class="fa fa-building" style="display: contents;margin-right:5px;"></i><span style="width:200px;text-align:center;font-size:1.6rem;text-transform: uppercase;font-weight: 700;letter-spacing: 0.5px;">Small Business Administration</span><i class="fa fa-chevron-down"></i>
+          </div>
+          <ul class="submenu" style="padding-left:8px;">
+            <li tabindex="0" onclick="myFunctionA()" onkeypress="myFunctionA()" id="agency-1">Nationwide SBA Loan Distributions</li>
+            <li tabindex="0" onclick="myFunctionB()" onkeypress="myFunctionB()" id="agency-1">Heat Map of Loan Distributions to the County Level</li>
+            <li tabindex="0" onclick="myFunction14()" onkeypress="myFunction14()" id="agency-1">Women-Owned Small Business Federal Contracts</li>
+          </ul>
+        </li>
+      </div>
+      <div class="usa-width-one-third usa-media_block " style="margin-bottom:0px;">
+       <li>
+         <div class="link" tabindex="0">
+           <i  class="fa fa-building" style="display: contents;"></i><span style="width:200px;text-align:center;font-size:1.6rem;text-transform: uppercase;font-weight: 700;letter-spacing: 0.5px;">General Services Administration</span><i class="fa fa-chevron-down"></i>
+         </div>
+         <ul class="submenu" style="padding-left:8px;margin-top:0px;">
+           <li tabindex="0" onclick="myFunctionC()" onkeypress="myFunctionC()" id="agency-1">Goal: Real Estate</li>
+           <li tabindex="0" onclick="myFunctionD()" onkeypress="myFunctionD()" id="agency-1">Goal: Acquisition</li>
+           <li tabindex="0" onclick="myFunctionE()" onkeypress="myFunctionE()" id="agency-1">Goal: Technology</li>
+           <li tabindex="0" onclick="myFunctionF()" onkeypress="myFunctionF()" id="agency-1">Goal: Shared Services</li>
+         </ul>
+       </li>
+     </div>
+    <div class="usa-width-one-third usa-media_block " style="margin-bottom:0px;">
+      <li>
+        <div class="link" tabindex="0">
+          <i class="fa fa-building" style="display: contents;"></i><span style="width:200px;text-align:center;font-size:1.6rem;text-transform: uppercase;font-weight: 700;letter-spacing: 0.5px;">Nuclear Regulatory Commission</span><i class="fa fa-chevron-down"></i>
+      </div>
+      <ul class="submenu" style="padding-left:8px;margin-top:0px;">
+        <li tabindex="0" onkeypress="myFunctionG()" onclick="myFunctionG()" id="agency-1">Complete Performance Dashboard</li>
+        <li tabindex="0" onkeypress="myFunctionH()" onclick="myFunctionH()" id="agency-1">Budget Analysis Dashboard</li>
+      </ul>
+      </li>
+    </div>
+
+  <div class="usa-width-one-third usa-media_block " style="margin-bottom:0px;">
+    <li>
+      <div class="link" tabindex="0">
+        <i class="fa fa-bullseye" style="display: contents;padding-right:8px;"></i><span style="width:200px;text-align:center;font-size:1.6rem;text-transform: uppercase;font-weight: 700;letter-spacing: 0.5px;">Agency Strategic and Priority Goals</span><i class="fa fa-chevron-down"></i>
+    </div>
+    <ul class="submenu" style="padding-left:8px;margin-top:0px;">
+      <li  tabindex="0" onkeypress="myFunctionI()" onclick="myFunctionI()" id="agency-1">Strategic Objectives</li>
+      <li  tabindex="0" onkeypress="myFunctionJ()" onclick="myFunctionJ()" id="agency-1">Priority Goals</li>
+
+      <li  class="tooltip"  tabindex="0"  onclick="window.open('../about/2019-SR-Categorizations.pdf')" id="agency-1">2019 Strategic Objective Categorizations
+      <span class="tooltiptext">This report consolidates Agency strategic objectives and categorizations resulting from the 2019 Strategic Reviews.</span>
+    </li>
+
+    </ul>
+    </li>
+  </div>
+
+</div>
+
+
+<style>
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 100%;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 10px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+</style>
+
+
+  <!-- <div class="usa-grid usa-graphic_list-row">
+  <div class="usa-width-one-third usa-media_block " style="margin-bottom:0px;">
+    <li>
+      <div class="link">
+        <i class="fa  fa-arrows-alt" style="display: contents;"></i><span style="width:200px;text-align:center;font-size:1.6rem;text-transform: uppercase;font-weight: 700;letter-spacing: 0.5px;">Sharing Quality Services</span><i class="fa fa-chevron-down"></i>
+      </div>
+      <ul class="submenu" style="padding-left:8px;margin-top:0px;">
+        <li onclick="myFunction11()" id="agency-1">Customer Satisfaction Scores</li>
+      </ul>
+    </li>
+
+  </div>
+  <div class="usa-width-one-third usa-media_block " style="margin-bottom:0px;">
+    <li>
+      <div class="link">
+        <i class="fa fa-money" style="display: contents;"></i><span style="width:200px;text-align:center;font-size:1.6rem;text-transform: uppercase;font-weight: 700;letter-spacing: 0.5px;">Getting Payments Right</span><i class="fa fa-chevron-down"></i>
+      </div>
+      <ul class="submenu" style="padding-left:8px;margin-top:0px;">
+        <li onclick="myFunction12()" id="agency-1">Cash Loss: FY17-18</li>
+        <li onclick="myFunction13()" id="agency-1">Cash Loss: Program Scorecards</li>
+      </ul>
+    </li>
+
+  </div>
+
+  </div>-->
+
+</ul>
+</section>
+
+<script src="{{ site.baseurl }}/js/jquery.min.js"></script>
+<script src="{{ site.baseurl }}/js/kpi.js"></script>
+<script src="{{ site.baseurl }}/js/script.js"></script>
+<script src="https://use.fontawesome.com/965b3921bf.js"></script>

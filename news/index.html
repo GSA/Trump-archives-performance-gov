@@ -1,0 +1,110 @@
+---
+title: "News"
+layout: navigation_PMA
+agency_dir: news
+
+description: How federal agencies are advancing key priorities and serving the American people.
+
+pagination:
+  enabled: true
+---
+
+    <section class="usa-section usa-section-dark usa-graphic_list">
+      <div class="usa-grid usa-graphic_list-row">
+        <div class="usa-width-one-whole usa-media_block">
+          <h1>News</h1>
+          <p>Latest updates on how agencies are serving the American people</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="usa-section-light usa-section usa-graphic_list">
+    <div class="usa-grid usa-graphic_list-row">
+      <div class="usa-flex usa-flex-wrap">
+      <div class="usa-width-one-whole usa-media_block-body">
+        <h2>Featured Stories</h2>
+        <br>
+      </div>
+    {% for project in site.posts %}
+    {% if project.rating == "1" %}
+      <div class="usa-width-one-half usa-width-tablet">
+        {% include featured.html
+         image_src=project.image
+         image_alt=project.image_accessibility
+         image_icon=project.image_icon
+         agency=project.agency
+         tagline=project.title
+         date=project.date
+         description=project.excerpt
+         link=project.permalink
+         tags=project.tags
+        %}
+      </div>
+    {% endif %}
+    {% endfor %}
+  </div>
+</section>
+
+  <section class="usa-section usa-graphic_list">
+    <div class="usa-grid usa-graphic_list-row">
+        <div class="usa-width-one-whole usa-media_block">
+          <h2>Recent News</h2>
+        </div>
+    </div>
+  </section>
+
+  <section class="usa-section usa-graphic_list">
+    <div class="usa-grid usa-graphic_list-row">
+      <div class="usa-flex usa-flex-wrap">
+        <div class="usa-width-one-third usa-media_block">
+        <!--  <div id="border">-->
+          <a class="twitter-timeline" data-width="100%" data-height="50rem" data-theme="light" data-link-color="#0071bc" data-border-color="#0071bc" href="https://twitter.com/PerformanceGov" >Tweets by @OMBPress</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script><br>
+      <!--  </div>-->
+        </div>
+      {% for post in paginator.posts %}
+          <div class="usa-width-one-third usa-width-tablet">
+            {% include card.html
+             image_src=post.image
+             image_alt=post.image_accessibility
+             image_icon=post.image_icon
+             agency=post.agency
+             tagline=post.title
+             date=post.date
+             description=post.excerpt
+             link=post.permalink
+             tags=post.tags
+            %}
+          </div>
+        {% endfor %}
+      </div>
+
+      <!-- Pagination links -->
+<div class="usa-grid usa-graphic_list-row">
+  <div class="usa-width-one-whole usa-media_block">
+    <center><font color="black">Page {{ paginator.page }} of {{ paginator.total_pages }}</font></center>
+  </div>
+</div>
+<div class="usa-grid usa-graphic_list-row">
+  <div class="usa-width-one-half usa-media_block">
+    {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="paginate-button usa-button" style="margin-top:15px;float:left;">&lsaquo; Previous {{ paginator.per_page }} Posts</a>
+    {% endif %}
+  </div>
+    {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path | prepend: site.baseurl }}" class="paginate-button usa-button" style="margin-top:15px;float:right;">Next {{ paginator.per_page }} Posts &rsaquo;</a>
+    {% endif %}
+  </div>
+</div>
+
+    <!--  <center>
+      <a class="usa-button usa-button-big" href="older-news.html">Read Older Posts
+      </a>
+    </center>-->
+  </section>
+
+
+
+{% comment %}
+  {% include themes.html %} themes include for css grid; NOT IE compatible
+  {% include themes-2.html %}
+{% endcomment %}

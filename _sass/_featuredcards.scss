@@ -1,0 +1,59 @@
+/*stylying for post featured section*/
+.card-date-featured {
+ color: #ffffff;
+ font-size: 1.8rem;
+
+}
+
+.card-image-featured {
+ background-color: #f1f1f1;
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ height: 300px;
+ margin: 0;
+ padding: 0;
+ width: 100%;
+ -webkit-box-shadow: 0 1px 9px rgba(0, 0, 0, 0.2);
+ -moz-box-shadow: 0 1px 9px rgba(0, 0, 0, 0.2);
+ -ms-box-shadow: 0 1px 9px rgba(0, 0, 0, 0.2);
+ -o-box-shadow: 0 1px 9px rgba(0, 0, 0, 0.2);
+ box-shadow: 0 1px 9px rgba(0, 0, 0, 0.2);
+}
+
+
+.container {
+    position: relative;
+    max-width: 800px; /* Maximum width */
+    margin: 0 auto; /* Center it */
+}
+
+
+.container .content {
+    position: absolute; /* Position the background text */
+    bottom: 10px; /* At the bottom. Use top:0 to append it to the top */
+    background: rgba(0,113,188, 0.9); /* Black background with 0.5 opacity */
+    color: #f1f1f1; /* Grey text */
+    width: 100%; /* Full width */
+    padding:0 30px 10px 30px /* Some padding */
+}
+
+.content:hover {
+
+  background: rgba(32,84,147, 0.9); /* Black background with 0.5 opacity */
+
+}
+
+#left {
+ width: 50%;
+ float: left;
+ height: 30px;
+
+}
+
+#right {
+  width: 50%;
+  float: right;
+  height: 50px;
+
+}

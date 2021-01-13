@@ -1,0 +1,3 @@
+hisp_service_id,year,quarter,touchpoint,surveys_offered_count,response_count,satisfied,trust,effective,easy,efficient,transparent,employee
+va-vha,2020,2,"Post-visit email survey",1860215,305079,4.38,4.28,4.35,4.32,4.27,4.40,4.38
+va-vha,2020,1,"Post-visit email survey",1808680,304687,4.36,4.27,4.33,4.29,4.27,4.40,4.38

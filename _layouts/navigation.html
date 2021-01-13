@@ -1,0 +1,52 @@
+---
+layout: base
+---
+<a class="usa-skipnav" href="#main-content">Skip to main content</a>
+<header class="usa-header usa-header-extended" role="banner">
+  {% include usa-banner.html %}
+  <div class="usa-navbar">
+    <button class="usa-menu-btn">Menu</button>
+    <div class="usa-logo" id="logo">
+      <a href="{{ site.baseurl }}/" accesskey="1" title="Home" aria-label="Home">
+        <img class="logo-img" src="{{ site.baseurl }}/img/homepage_images/performance-gov-logo-lg@2x.png" alt="Performance.gov">
+      </a>
+    </div>
+  </div>
+  {% include usa-nav.html %}
+</header>
+{% include on-page-load.html %}
+<script>
+  $(function () {
+    var portfolioContainer = $('.portfolioContainer');
+    portfolioContainer.isotope({
+      filter: '*',
+      animationOptions: {
+        duration: 750,
+        easing: 'linear',
+        queue: false
+      }
+    });
+
+    $('.portfolioFilter a').click(function () {
+      $('.portfolioFilter .current').removeClass('current');
+      $(this).addClass('current');
+
+      var selector = $(this).attr('data-filter');
+      portfolioContainer.isotope({
+        filter: selector,
+        animationOptions: {
+          duration: 750,
+          easing: 'linear',
+          queue: false
+        }
+      });
+      return false;
+    });
+  });
+</script>
+<div class="usa-overlay"></div>
+<main class="usa-grid usa-section usa-content usa-layout-docs" id="main-content">
+  <button onclick="topFunction()" id="backtotop" title="Go to top" style="display: none;">˄ Top</button>
+  {{ content }}
+</main>
+{% include main_footer.html %}

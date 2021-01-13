@@ -1,0 +1,85 @@
+<section class="usa-section">
+  <div class="usa-grid">
+    <div class="usa-width-one-whole">
+      <h2>High Impact Service Providers (HISP)</h2>
+      <p>
+        We’re working with 25 of the nation’s highest-impact services
+        (identified due to the scale and impact of their public-facing services)
+        to transform the way we deliver, setting and raising the standard of experience across government.
+      </p>
+      <p>
+        <a href="https://www.performance.gov/cx/a11-280.pdf" target="_blank" rel="noopener">A-11 Section 280</a>
+        establishes a baseline for managing customer experience in the public sector.
+        High Impact Service Providers (HISPs) are required to annually conduct a
+        capacity assessment to track their maturity and identify areas for growth,
+        collect feedback in line with government-wide measures, and outline specific actions
+        that are directly aimed at improving critical moments in their customers’ journeys.
+        Importantly, we are sharing this publicly to increase the transparency and accountability of our commitments.
+      </p>
+      <p>
+        Click below to view plans and progress for the following Federal services.
+      </p>
+      <div style="font-size: 13px; margin-bottom: 20px;">
+        <div style="margin-bottom: 3px;">
+          Key:
+        </div>
+        <div class="usa-row">
+          <div class="usa-width-one-fourth">
+            <i class="fa fa-times-circle" style="color: #e52207;"></i>
+            Not submitting data
+          </div>
+          <div class="usa-width-one-fourth">
+            <i class="fa fa-exclamation-circle" style="color: #ffbe2e;"></i>
+            Reporting partially within A-11 guidelines
+          </div>
+          <div class="usa-width-one-fourth">
+            <i class="fa fa-check-circle" style="color: #538200;"></i>
+            Reporting within A-11 guidelines
+          </div>
+          <div class="usa-width-one-fourth">
+            <i class="fa fa-circle" style="color: #999999;"></i>
+            A future quarter
+          </div>
+        </div>
+      </div>
+      <br>
+      <br>
+    </div>
+    <div class="usa-width-one-whole">
+      {% for hisp in site.data.hisps %}
+      <ul class="usa-accordion-bordered">
+        <li>
+          <button class="usa-accordion-button" aria-expanded="false" aria-controls="b-{{ hisp.department_abbreviation }}-{{ hisp.service_abbreviation }}">
+            <div class="card-service">
+              <div class="logo" style="line-height: 0;">
+                <img src="{{ site.baseurl }}/img/cx/agencies/{{ hisp.department_abbreviation }}-seal.png" alt="{{ this_hisp.department }} seal" style="width:96px;">
+              </div>
+              <div class="copy">
+                <div style="margin-top: 7px; font-weight: normal;">
+                  {{ hisp.department }}
+                </div>
+                <h3 style="font-size: 22px;">
+                  {{ hisp.service }}
+                </h3>
+
+                <div class="list-topics2" style="font-size: 13px; font-weight: normal;">
+                  <div style="font-size: 14px; font-weight: normal; margin-bottom: 7px; color: #333;">
+                    Feedback data reported:
+                  </div>
+                  {% include cx/checkmark.html year="2020" quarter="1" has_data=hisp.data_2020_q1 %}
+                  {% include cx/checkmark.html year="2020" quarter="2" has_data=hisp.data_2020_q2 %}
+                  {% include cx/checkmark.html year="2020" quarter="3" has_data=hisp.data_2020_q3 future="TRUE" %}
+                  {% include cx/checkmark.html year="2020" quarter="4" has_data=hisp.data_2020_q4 future="TRUE" %}
+                </div>
+              </div>
+            </div>
+          </button>
+          <div id="b-{{ hisp.department_abbreviation }}-{{ hisp.service_abbreviation }}" class="usa-accordion-content">
+            {% include hisp-detail.html hisp=hisp %}
+          </div>
+        </li>
+      </ul>
+      {% endfor %}
+    </div>
+  </div>
+</section>

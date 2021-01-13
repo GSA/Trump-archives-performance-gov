@@ -1,0 +1,108 @@
+---
+title: "CX Blog"
+layout: navigation_PMA
+description: How federal agencies are advancing key priorities and serving the American people.
+pagination:
+  enabled: true
+  tags: cx
+  per_page: 9
+---
+
+<section class="usa-section usa-section-dark usa-graphic_list">
+  <div class="usa-grid usa-graphic_list-row">
+    <div class="usa-width-one-whole usa-media_block">
+      <a href="{{ site.baseurl }}/cx/" style="text-decoration:none;color:#d6d7d9;">
+        <b>&#10094; &nbsp; Back to CX Home</b>
+      </a>
+
+      <h1>
+        Federal Customer Experience Blog
+      </h1>
+      <p>
+        The latest on Federal efforts to improve services for the public
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="usa-section-light usa-section usa-graphic_list">
+  <div class="usa-grid usa-graphic_list-row">
+    <div class="usa-flex usa-flex-wrap">
+      <div class="usa-width-one-whole usa-media_block-body">
+        <h2>Featured Stories</h2>
+        <br>
+      </div>
+      {% for project in site.posts  %}
+      {% if project.cx_rating == "1" %}
+      <div class="usa-width-one-half usa-width-tablet">
+        {% include featured.html
+         image_src=project.image
+         image_alt=project.image_accessibility
+         image_icon=project.image_icon
+         agency=project.agency
+         tagline=project.title
+         date=project.date
+         description=project.excerpt
+         link=project.permalink
+         tags=project.tags
+        %}
+      </div>
+      {% endif %}
+      {% endfor %}
+    </div>
+</section>
+
+<section class="usa-section usa-graphic_list">
+  <div class="usa-grid usa-graphic_list-row">
+    <div class="usa-width-one-whole usa-media_block">
+      <h2>Recent News</h2>
+    </div>
+  </div>
+</section>
+
+<section class="usa-section usa-graphic_list">
+  <div class="usa-grid usa-graphic_list-row">
+    <div class="usa-flex usa-flex-wrap">
+      {% for post in paginator.posts %}
+      <div class="usa-width-one-third usa-width-tablet">
+        {% include card.html
+             image_src=post.image
+             image_alt=post.image_accessibility
+             image_icon=post.image_icon
+             agency=post.agency
+             tagline=post.title
+             date=post.date
+             description=post.excerpt
+             link=post.permalink
+             tags=post.tags
+             %}
+      </div>
+      {% endfor %}
+    </div>
+
+    <!-- Pagination links -->
+    <div class="usa-grid usa-graphic_list-row">
+      <div class="usa-width-one-whole usa-media_block">
+        <center>
+          <font color="black">Page {{ paginator.page }} of {{ paginator.total_pages }}</font>
+        </center>
+      </div>
+    </div>
+    <div class="usa-grid usa-graphic_list-row">
+      <div class="usa-width-one-half usa-media_block">
+        {% if paginator.previous_page %}
+        <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="paginate-button usa-button" style="margin-top:15px;float:left;">&lsaquo; Previous {{ paginator.per_page }} Posts</a>
+        {% endif %}
+      </div>
+      {% if paginator.next_page %}
+      <a href="{{ paginator.next_page_path | prepend: site.baseurl }}" class="paginate-button usa-button" style="margin-top:15px;float:right;">Next {{ paginator.per_page }} Posts &rsaquo;</a>
+      {% endif %}
+    </div>
+  </div>
+
+</section>
+
+{% comment %}
+{% include themes.html %} themes include for css grid; NOT IE compatible
+{% include themes-2.html %}
+{% endcomment %}

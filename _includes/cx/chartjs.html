@@ -1,0 +1,112 @@
+<style>
+  canvas {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+  }
+</style>
+
+<a id="cx-charts-{{ include.hisp.service_id }}"></a>
+<h2 class="cx-section-heading">
+  {% if this_hisp.service_id == "va-vha" %}
+  <a href="{{ site.baseurl}}/cx/data/{{ include.hisp.service_id }}.csv" style="font-size: 16px; font-weight: normal; float: right; margin-top: 0.5em;">Download data</a>
+  {% endif %}
+  CX Feedback Data
+</h2>
+
+{% if this_hisp.service_id == "va-vha" %}
+<div class="usa-grid">
+  <div class="usa-width-full">
+    <div style="width:100%;">
+      <canvas id="canvas-{{ include.hisp.service_id }}"></canvas>
+    </div>
+  </div>
+</div>
+
+<script>
+  chartConfigs["{{ include.hisp.service_id }}"] = {
+    type: 'bar',
+    data: {
+      labels: [
+        {% for hisp in site.data.cx.hisp[include.hisp.service_id] %}
+        {% assign outerLoop = forloop.index %}
+          {% if forloop.first %}
+            {% for pair in hisp %}
+              {% if forloop.index > 6  %}'{{pair[0]}}',{% endif %}
+            {% endfor %}
+          {% endif %}
+        {% endfor %}
+      ],
+      datasets: [
+        {% for hisp in site.data.cx.hisp[include.hisp.service_id] %}{% assign outerLoop = forloop.index %}
+          {% if hisp.year == "2020" %}
+          {% if hisp.quarter == "2" %}
+          {
+            label: '{% for pair in hisp %}{% if forloop.index == 4 %}{{ pair[1] }}{% endif %}{% endfor %}',
+            data: [
+              {{ hisp.satisfied }},
+              {{ hisp.trust }},
+              {{ hisp.effective }},
+              {{ hisp.easy }},
+              {{ hisp.efficient }},
+              {{ hisp.transparent }},
+              {{ hisp.employee }}
+            ],
+            backgroundColor: Object.values(window.chartjsColors)[{{forloop.index0}}],
+            borderColor: Object.values(window.chartjsColors)[{{forloop.index0}}],
+            borderWidth: 1,
+          },
+        {% endif %}
+        {% endif %}
+        {% endfor %}
+      ]
+    },
+    options: {
+      responsive: true,
+      legend: {
+        position: 'bottom',
+      },
+      hover: {
+        mode: 'index'
+      },
+      scales: {
+        xAxes: [{
+          display: true,
+          scaleLabel: {
+            display: true,
+            labelString: 'Quarter'
+          }
+        }],
+        yAxes: [{
+          display: true,
+          scaleLabel: {
+            display: true,
+            labelString: 'Value'
+          },
+          ticks: {
+            min: 3.0,
+            max: 5.0
+          }
+        }]
+      },
+      title: {
+        display: true,
+        text: 'CX Results for Q2 FY2020'
+      }
+    }
+  };
+
+  window.addEventListener("load", function() {
+    var ctx = document.getElementById('canvas-{{ include.hisp.service_id }}').getContext('2d');
+    cxCharts["{{ include.hisp.service_id }}"] = new Chart(ctx, chartConfigs["{{ include.hisp.service_id }}"]);
+  });
+</script>
+{% else %}
+<p>
+  During this quarter,
+  the HISP collected feedback under a PRA clearance
+  that does not all for public disclosure.
+  HISPs are required to establish the new A-11 Section 280 generic clearance
+  that allows for public reporting by October 1, 2020.
+</p>
+{% endif %}

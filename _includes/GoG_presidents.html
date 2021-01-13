@@ -1,0 +1,16 @@
+
+
+{% for GoG_winners in site.GoG_winners %}
+  {% if GoG_winners.award == "President's" %}
+  <div class="usa-width-one-third usa-media_block item {{ GoG_winners.category }} {{ GoG_winners.story }}"   style="margin-right:5px;margin-bottom:15px;margin-left:5px;">
+   <a style="color:black;" href="{{ site.baseurl }}{{ GoG_winners.permalink }}">
+    <div class="container-GoG-pres">
+        <center><img class="card-image-gog-presidents gray" src="{{ site.baseurl }}{{ GoG_winners.image }}" alt="Avatar" class="image"></center>
+        <div class="winner-text-president">
+        <center><p class="name-text" style="margin-bottom:9px;line-height:1;font-size:18px;"><b>{{ GoG_winners.name}}</b></p>
+        <p style="margin-top:0;margin-bottom:0;font-size:15px;" class="card-tag">{{ GoG_winners.agency }}</p></center>
+      </div><!--close winner text--></a>
+    </div><!--close container-GoG-->
+  </div>
+  {% endif %}
+{% endfor %}

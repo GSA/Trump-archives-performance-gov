@@ -1,0 +1,62 @@
+<section class="usa-section usa-graphic_list">
+
+<div class="usa-grid usa-graphic_list-row" style="padding-left:0px;">
+<div class="usa-width-one-whole usa-media_block">
+  <h3>President's Award Winners</h3>
+  <hr>
+</div>
+</div>
+<div class="main-iso">
+{% for GoG_winners in site.GoG_winners %}
+ {% if GoG_winners.award == "President's" %}
+<div class="usa-width-one-half archive-container usa-media_block item {{ GoG_winners.category }} {{ GoG_winners.story }}" style="margin: 15px; width:45%">
+  <p><b>{{ GoG_winners.name}}</b></p>
+  <p>{{ GoG_winners.agency }}</p>
+  <p style="font-size:.8em;">{{ GoG_winners.description }}</p>
+</div>
+{% endif %}
+{% endfor %}
+</div>
+
+<div class="usa-grid usa-graphic_list-row" style="padding-left:0px;">
+<div class="usa-width-one-whole usa-media_block">
+  <h3>Agency Award Winners</h3>
+  <hr>
+</div>
+</div>
+<div class="main-iso">
+{% for GoG_winners in site.GoG_winners %}
+{% if GoG_winners.award == "Agency" %}
+<div class="usa-width-one-third archive-container-team usa-media_block item {{ GoG_winners.category }} {{ GoG_winners.story }}" style="margin: 15px; width:30%;">
+  {% if GoG_winners.team %}
+    <p><b>Team Award</b></p>
+  {% else %}
+    <p><b>{{ GoG_winners.name}}</b></p>
+  {% endif %}
+  <p>{{ GoG_winners.agency }}</p>
+  <p style="font-size:.8em;">{{ GoG_winners.description }}</p>
+</div>
+{% endif %}
+{% endfor %}
+</div>
+
+<div class="usa-grid usa-graphic_list-row" style="padding-left:0px;">
+<div class="usa-width-one-whole usa-media_block">
+  <h3>Council Award Winners</h3>
+  <hr>
+</div>
+</div>
+<div class="main-iso">
+
+{% for GoG_winners in site.GoG_winners %}
+{% if GoG_winners.award == "Council" %}
+<div class="usa-width-one-third archive-container-council  usa-media_block item {{ GoG_winners.category }} {{ GoG_winners.story }}" style="margin: 15px; width:30%">
+  <p><b>{{ GoG_winners.name}}</b></p>
+  <p>{{ GoG_winners.agency }}</p>
+  <p style="font-size:.8em;">{{ GoG_winners.description }}</p>
+</div>
+
+{% endif %}
+{% endfor %}
+</div>
+</section>

@@ -1,0 +1,81 @@
+{% assign card_link = include.link | prepend: site.baseurl %}
+<!--
+<article class="card">
+  <div class="card-link" data-href="{{ card_link }}" tabindex="-1">
+  <!--  <img
+       alt="{{ include.image_alt }}"
+       class="card-image-sml"
+       src="{{ site.baseurl }}{{ include.image_src }}"
+       style="width:25%;object-fit:cover;"
+
+    <div class="card-banner"
+    style="height:auto;wdith:100%">
+  {% if include.agency %}
+        <p class="card-tag">{{ include.agency }}</p>
+      {% endif %}
+      {% if include.date %}
+        <p class="card-date">
+          {{ include.date | date: '%B %d, %Y' }}
+
+        </p>
+      {% endif %}
+
+      {% if card_link and include.tagline %}
+        <a href="{{ card_link }}" tabindex="-1" class="card-link-tagline"><h3 class="h4">{{ include.tagline }}</h3></a>
+      {% endif %}
+
+        <p class="card-description">{{ include.description }}</p>
+        <span class="card-tag-text">Tags:</span>
+        {% for tag in include.tags %}
+        <span class="usa-label"
+          <a href="{{ site.baseurl }}/tags/{{ tag }}/">{{ tag }}</a>
+        </span>
+        {% endfor %}
+        </div>
+
+    <div class="card-cta" tabindex="0">
+      <a href="{{ card_link }}" style="text-decoration:none;">
+      <b><&#10094;Read More &#10095;</a></b>
+  </div>
+  </div>
+</article>-->
+
+  <div class="usa-grid usa-graphic_list-row"
+  style="border-bottom: 1px solid grey; padding-top:23px;">
+    <div class="usa-width-one-fourth usa-media_block">
+        <div class="usa-media_block-body">
+           <img
+               alt="{{ include.image_alt }}"
+               class="card-image-bg"
+               src="{{ site.baseurl }}{{ include.image_src }}"
+               style="height:150px;width:170px;object-fit:cover;">
+        </div>
+      </div>
+    <div class="usa-width-three-fourths usa-media_block">
+        <div class="usa-media_block-body">
+                  {% if include.date %}
+                <p class="card-date">
+                  {{ include.date | date: '%B %d, %Y' }}
+                </p>
+              {% endif %}
+
+              {% if card_link and include.tagline %}
+                <a href="{{ card_link }}" tabindex="-1" class="card-link-tagline"><h3 class="h4">{{ include.tagline }}</h3></a>
+              {% endif %}
+
+              <!--  <p class="card-description">{{ include.description }}</p>-->
+                <span class="card-tag-text">Tags:</span>
+                {% for tag in include.tags %}
+                  {% unless tag == 'sharing' or tag == 'IT' or tag == 'data' or tag == 'workforce' or tag == 'cx' or tag == 'low-to-high' or tag == 'cm' or tag == 'grants' or tag == 'payments' or tag == 'spending' or tag == 'acquisition' or tag == 'infrastructure' or tag == 'credentialing' or tag == 'lab' %}
+                <span class="usa-label">
+                  <a href="{{ site.baseurl }}/tags/{{ tag }}/">{{ tag }}</a>
+                </span>
+                  {% endunless %}
+                {% endfor %}
+                </div>
+                <br />
+
+
+            <br />
+      </div>
+    </div>

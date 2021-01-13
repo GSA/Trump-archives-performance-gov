@@ -1,0 +1,30 @@
+---
+layout: navigation
+---
+
+<section class="usa-section" style="padding-top:0px;">
+  <div class="usa-grid usa-graphic_list-row" style="padding-left:0px;">
+    <p><a href="{{ site.baseurl }}{{page.agency-link}}">Back to agency page</a></p>
+    <div class="usa-width-one-whole usa-media_block">
+      <div>
+        <div style="width:12%;float:left">
+        <img src="{{site.baseurl}}{{ page.agency-seal }}" alt="agency seal" align="center" width="87" style="float:left;padding-top:21px;">
+        {% if page.agency-name == "Department of State and United States Agency for International Development" %}
+        <a href="{{ page.agency-site-2 }}" target="_blank"><img src="{{site.baseurl}}{{ page.agency-seal-2 }}" alt="agency seal" align="center" width="87"> </a>
+        {% endif %}
+        </div>
+        <div style="width:88%;float:right">
+          <h2 style="font-size:21px;" class="card-tag">{{ page.agency-name }}</h2>
+          <h1 style="margin-top:5px;"> 2018-2019 Agency Priority Goals <a href="{{ page.agency-site }}" target="_blank"></a>
+        <!--beginning of second seal for USAID-->
+
+          </h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr>
+
+{{ content }}

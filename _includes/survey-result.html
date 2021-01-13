@@ -1,0 +1,11 @@
+<div class="survey-result-box {{% if question.average_score == 'No Data' %}}survey-no-data2{{% endif %}}">
+	<div class="survey-result-stats">
+		<span class="survey-question">{{ question.question }}</span>
+		<div class="survey-score">
+			<div class="survey-avg-score">{{ question.average_score }}</div>
+			<div class="star-rating" style="--rating: {{ question.average_score }};" aria-label="Rating of this product is {{ question.average_score }} out of 5."></div>
+			<span class="survey-trend-arrow survey-no-arrow"></span>
+		</div>
+	</div>
+	<div class="survey-question-description">{{ question.description }}</div>
+</div>

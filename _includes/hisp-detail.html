@@ -1,0 +1,41 @@
+{% assign this_hisp = hisp %}
+
+{% for hisp_data in site.data.hisp-data %}
+{% if hisp_data.service_id == hisp.service_id %}
+  {% assign this_hisp_data = hisp_data %}
+{% endif %}
+{% endfor %}
+
+{% if this_hisp.service == this_hisp.bureau %}
+  {% assign hisp_bureau_display = '' %}
+{% else %}
+  {% capture hisp_bureau_display %}{{ this_hisp.bureau }}, {% endcapture %}
+{% endif %}
+
+<main class="usa-content usa-layout-docs cx-hisp-profile usa-prose">
+  <div class="usa-grid">
+    <div class="usa-width-one-whole">
+      <p>
+        {{ this_hisp.blurb }}
+      </p>
+    </div>
+  </div>
+
+  <section class="usa-section">
+    <div class="usa-grid">
+      <div class="usa-width-one-whole">
+        <h3>
+          CX Plans and Progress
+        </h3>
+        <p>
+          <a href="{{ site.baseurl }}/cx/dashboard/actionplans/2020/2020-hisp-action-plan-{{ this_hisp.service_id }}.pdf" class="usa-button usa-button-secondary" target="_blank" rel="noopener">2020 Action Plan <i class="fa fa-external-link"></i></a>
+          &nbsp;
+          <a href="{{ site.baseurl }}/cx/dashboard/actionplans/2019/2019-hisp-action-plan-{{ this_hisp.service_id }}.pdf" class="usa-button usa-button-secondary" target="_blank" rel="noopener">2019 Action Plan <i class="fa fa-external-link"></i></a>
+        </p>
+      </div>
+      <div class="usa-width-one-whole">
+        {% include cx/chartjs.html hisp=hisp %}
+      </div>
+    </div>
+  </section>
+</main>

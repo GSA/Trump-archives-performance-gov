@@ -1,0 +1,18 @@
+<a id="cx-data-{{ hisp.service_id }}"></a>
+<h2 class="cx-section-heading">Download CX Feedback Data</h2>
+
+{% if this_hisp_data.data_available == 'TRUE' %}
+  {% if this_hisp_data.data_public == 'FALSE' %}
+  <p>
+    During this quarter,
+    the HISP collected feedback under a <a href="https://pra.digital.gov/" target="_blank" rel="noopener">PRA clearance</a>
+    that does not all for public disclosure.
+    HISPs are required to establish the new A-11 Section 280 generic clearance
+    that allows for public reporting by October 1, 2020.
+  </p>
+  {% endif %}
+{% endif %}
+
+{% if this_hisp_data.data_available == 'FALSE' %}
+  This HISP did not submit customer feedback data for this quarter.
+{% endif %}

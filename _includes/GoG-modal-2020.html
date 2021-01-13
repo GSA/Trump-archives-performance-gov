@@ -1,0 +1,40 @@
+<div id="openModal{{ 2020_GoG_winners.modal }}" class="modalDialog">
+    <div>
+        <a href="#close" title="Close" class="close">X</a>
+        <h2 class="name-text" style="margin-bottom:19px;line-height:1;margin-top:0px;color:black;"><b>{{ 2020_GoG_winners.name}}</b><br>
+            {% if 2020_GoG_winners.image and 2020_GoG_winners.originalImage %}
+            <img class="media-GoG" style="width:75px;float:right;margin-top: -12px;" src="{{ site.baseurl }}/img/{{ 2020_GoG_winners.image }}">
+            {% elsif 2020_GoG_winners.image %}
+            <img class="media-GoG" style="width:75px;float:right;margin-top: -12px;" src="{{ site.baseurl }}/img/{{ 2020_GoG_winners.image }}">
+            {% else %}
+            <img class="media-GoG" style="width:75px;float:right;margin-top: -12px;" src="{{ site.baseurl }}/img/GoG/banners/agency-background.png">
+            {% endif %}
+        </h2>
+
+        {% if 2020_GoG_winners.award == "Agency" %}
+        <p id="agency-winner-border-modal" class="card-tag"><b>{{ 2020_GoG_winners.award }} Award</b></p>
+        {% elsif 2020_GoG_winners.award == "Council" %}
+        <p id="council-winner-border-modal" class="card-tag"><b>{{ 2020_GoG_winners.award }} Award</b></p>
+        {% elsif 2020_GoG_winners.award == "President's" %}
+        <p id="president-winner-border-modal" class="card-tag"><b>{{ 2020_GoG_winners.award }} Award</b></p>
+        {% endif %}
+
+        <h4 class="modal-title"> Team Members</h4>
+        <div style="float: left; width: 50%;">
+            <ul>
+                {% for item in 2020_GoG_winners.team-names %}
+                <li class="team-modal">{{ item }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div style="float: right; width: 50%;">
+            <ul>
+                {% for item in GoG_winners.people-right %}
+                <li class="team-modal">{{ item }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        <h4 class="modal-title"> Award Description </h4>
+        <p style="font-size:.7em;">{{ 2020_GoG_winners.description }}</p>
+    </div>
+</div>

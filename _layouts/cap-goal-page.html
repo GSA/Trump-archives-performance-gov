@@ -1,0 +1,574 @@
+---
+layout: navigation_PMA
+---
+{% if page.alert %}
+<div class="usa-alert usa-alert-info" xmlns="http://www.w3.org/1999/html">
+    <div class="usa-alert-body">
+        <h3 class="usa-alert-heading">Update</h3>
+        <p class="usa-alert-text">{{ page.alert }}</p>
+    </div>
+</div>
+{% endif %}
+
+
+<section class="usa-section usa-graphic_list" id="image">
+   <div class="usa-grid usa-graphic_list-row">
+     <div class="usa-width-two-thirds usa-media_block">
+       <a href="{{ site.baseurl }}/CAP/overview/" style="text-decoration:none;color:#ffffff;float:left;font-size:2rem;">
+           <b>&#10094; &nbsp; CAP Goal Overview</b></a>
+          <h1 style="margin-top:66px;line-height:48px;padding-top: 50px">
+        <!--   {% if page.cap-category == "Key Driver of Reform" %}
+           <p class="card-tag" style="margin-bottom:0px;font-size:.37em;"><a style="text-decoration:none;color:#d6d7d9;" href="{{ site.baseurl }}/news">Key Driver of Reform</a></p>
+          {% elsif page.cap-category == "Cross-Cutting Priority Area" %}
+           <p class="card-tag" style="margin-bottom:0px;font-size:.37em;"><a style="text-decoration:none;color:#d6d7d9;" href="{{ site.baseurl }}/news">Cross-Cutting Priority Area</a></p>
+          {% endif %}-->
+      <img src="{{ site.baseurl }}{{ page.cap-icon }}" alt="CAP Goal Icon" align="left" id="cap-icon">{{ page.title }}<br><span style="font-size:27px;">{{ page.sub-title }}</span></h1>
+
+      <a id ="mobile-button" class="usa-button usa-button-secondary CAP-tag-text"style="background-color:#046b99;color:#ffffff;font-weight:600;font-size: 14px;height: 36px;" href="#KPI">News & Events</a>
+
+   {% if page.KPI %}
+        <a id ="mobile-button" class="usa-button usa-button-secondary CAP-tag-text" style="background-color:#00a6d2;color:#ffffff;font-weight:600;font-size: 14px;height: 36px;" href="#KPI" id="pulse">Key Performance Indicators</a>
+   {% endif %}
+
+       <a id ="mobile-button" class="usa-button usa-button-secondary CAP-tag-text"style="background-color:#9bdaf1;color:black;font-weight:600;font-size: 14px;height: 36px;" href="#KPI">Resources</a>
+
+    {% if page.listserv-title %}
+      <a id ="mobile-button" class="usa-button usa-button-secondary CAP-tag-text"style="background-color:#d6d7d9;color:black;font-weight:600;font-size: 14px;height: 36px;" href="#openModal{{ page.listserv-url}}">{{ page.listserv-title }}</a>
+        {% include {{ page.listserv-include }}.html %}
+    {% endif %}
+
+    {% if page.title == "Improving Customer Experience with Federal Services" %}
+      <a id ="mobile-button" class="usa-button usa-button-secondary CAP-tag-text"style="background-color:#d6d7d9;color:black;font-weight:600;font-size: 14px;height: 36px;" href="{{ site.baseurl }}/cx/">HISP Profiles</a>
+    {% endif %}
+
+    {% if page.CFR %}
+      <a id ="mobile-button" class="usa-button usa-button-secondary CAP-tag-text"style="background-color:#00bde3;color:black;font-weight:600;font-size: 14px;height: 36px;margin-top:0px;" href="#cfr">2 CFR Revisions</a>
+    {% endif %}
+
+
+
+
+    </div>
+    <div class="usa-width-one-third usa-media_block">
+      <!--<a href="{{ site.baseurl }}{{ page.next-page-url }}" style="text-decoration:none;color:#ffffff;float:right;font-size:2rem">
+         <b> CAP Goal: {{ page.next-cap-goal-name }}&nbsp;&#10095;</b></a>-->
+        <div class="cap-box" style="margin-top:30px;">
+          <div id="top">
+          {% if page.featured-box %}
+            <p style="margin-bottom:5px;">{{  page.featured-box }}</p>
+            <a class="usa-button usa-button-secondary CAP-tag-text"style="background-color:#ffffff;color:#e31c3d;" href="{{  page.featured-box-url}}" target="_blank"><b>{{  page.featured-box-button }}</b></a>
+          {% else %}
+            <p>Download the latest Action Plan and Progress Update</p>
+            <a class="usa-button usa-button-secondary CAP-tag-text"style="background-color:#ffffff;color:#e31c3d;" href="{{ site.baseurl }}{{ page.current-action-plan }}" target="_blank"><b>Download</b></a>
+          {% endif %}
+            </div>
+          <div id="bottom">
+            <blockquote-CAP>
+              {{ page.quote }}<span>&#8221;</span>
+              <cite>{{ page.quote-author }}</cite>
+
+            </blockquote-CAP>
+<style>
+blockquote-CAP {
+font-family: Georgia, serif;
+font-size: {{ page.font-size }};
+font-style: italic;
+width: auto;
+margin: 0.25em 0;
+padding-top: 0;
+padding-left: 1.2em;
+padding-right: 0;
+padding-bottom: 0;
+line-height: 1.45;
+position: relative;
+color: #ffffff;
+align: center;
+display: block;
+}
+
+blockquote-CAP:before {
+  display: block;
+  padding-left: 10px;
+  content: "\201C";
+  font-size: 60px;
+  position: absolute;
+  left: -20px;
+  top: -20px;
+  color: #F5F5F5;
+                  }
+blockquote-CAP cite {
+  color: #F5F5F5;
+  font-size: 14px;
+  display: block;
+  margin-top: 5px;
+  }
+
+  blockquote-CAP cite:before {
+  content: "\2014 \2009";
+  }
+
+</style>
+            <!--<center><h3 style="font-size:19px;"><b>&#10077;{{ page.quote }}&#10078;</b></h3>
+            <h2 style="padding-top:5px;font-size:15px">- {{ page.quote-author }}</h2>
+            </center>-->
+          </div>
+     </div>
+   </div>
+  </div>
+</section>
+<section class="usa-section usa-graphic_list">
+  <div class="usa-grid usa-graphic_list-row">
+    {% if page.goal-leader-name %}
+       <div class="usa-width-one-sixth " style="margin-right:50px;">
+         <center><img id="cap-goal-headshot" src="{{ site.baseurl }}{{ page.goal-leader-photo }}" alt="{{ page.alt_text_1}}">
+          <p class ="auto" style="font-size:1.3rem"><b><i>Goal Leader:</i><br> {{ page.goal-leader-name }}</b><br>{{ page.goal-leader-title }}</p></center>
+       </div>
+    {% endif %}
+
+    {% if page.goal-leader-2-name %}
+        <div class="usa-width-one-sixth " style="margin-right:50px;">
+           <center><img id="cap-goal-headshot" src="{{ site.baseurl }}{{ page.goal-leader-2-photo }}" alt="{{ page.alt_text_2}}">
+           <p class ="auto" style="font-size:1.3rem"><b><i>Goal Leader:</i><br> {{ page.goal-leader-2-name }}</b><br>{{ page.goal-leader-2-title }}</p></center>
+       </div>
+     {% endif %}
+     {% if page.goal-leader-3-name %}
+        <div class="usa-width-one-sixth" style="margin-right:50px;" >
+          <center><img id="cap-goal-headshot" src="{{ site.baseurl }}{{ page.goal-leader-3-photo }}" alt="{{ page.alt_text_3}}">
+          <p class ="auto" style="font-size:1.3rem"><b><i>Goal Leader:</i><br> {{ page.goal-leader-3-name }}</b><br>{{ page.goal-leader-3-title }}</p></center>
+       </div>
+     {% endif %}
+       </div>
+     {% if page.goal-leader-4-name %}
+       <div class="usa-grid usa-graphic_list-row">
+          <div class="usa-width-one-sixth " style="margin-right:50px;">
+             <center><img id="cap-goal-headshot" src="{{ site.baseurl }}{{ page.goal-leader-4-photo }}" alt="{{ page.alt_text_4}}">
+            <p class ="auto" style="font-size:1.3rem"><b><i>Goal Leader:</i><br> {{ page.goal-leader-4-name }}</b><br>{{ page.goal-leader-4-title }}</p></center>
+         </div>
+     {% endif %}
+     {% if page.goal-leader-5-name %}
+            <div class="usa-width-one-sixth " style="margin-right:50px;">
+              <center> <img id="cap-goal-headshot"src="{{ site.baseurl }}{{ page.goal-leader-5-photo }}" alt="{{ page.alt_text_5}}">
+              <p class ="auto" style="font-size:1.3rem"><b><i>Goal Leader:</i><br> {{ page.goal-leader-5-name }}</b><br>{{ page.goal-leader-5-title }}</p></center>
+           </div>
+     {% endif %}
+     {% if page.goal-leader-6-name %}
+            <div class="usa-width-one-sixth" style="margin-right:50px;" >
+              <center><img id="cap-goal-headshot" src="{{ site.baseurl }}{{ page.goal-leader-6-photo }}" alt="{{ page.alt_text_6}}">
+              <p class ="auto" style="font-size:1.3rem"><b><i>Goal Leader:</i><br> {{ page.goal-leader-6-name }}</b><br>{{ page.goal-leader-6-title }}</p></center>
+           </div>
+     {% endif %}
+    </div>
+</section>
+<script>
+  if (document.getElementsByClassName("auto")) {
+    var autos = document.getElementsByClassName("auto");
+    for (var i=0; i<autos.length; i++) {
+      autos[i].addEventListener("mouseover", autoOver);
+      autos[i].addEventListener("mouseout", autoOut);
+    }
+  }
+
+  function autoOver() {
+    this.style.height = this.scrollHeight + "px";
+  }
+
+  function autoOut() {
+    this.style.height = "40px";
+  }
+</script>
+<section class="CAP-media usa-section usa-graphic_list">
+  <div class="usa-grid usa-graphic_list-row">
+    <div class="usa-width-one-whole">
+      <h2 style="margin-top:18px;">Download the latest Action Plan and Progress Update</h2>
+      <p class="card-tag" style="margin-top:70px;margin-bottom:30px;font-size:.8em;"><a style="text-decoration:none;background-color:#ffffff;color:#e31c3d;padding:10px;border-radius:15px;"  href="{{ site.baseurl }}{{ page.current-action-plan }}">Download</a></p>
+      </div>
+    </div>
+  </section>
+  <section class="quote-media usa-section usa-graphic_list">
+    <div class="usa-grid usa-graphic_list-row">
+      <div class="usa-width-one-whole">
+          <center><h3><b>&#10077;{{ page.quote }}&#10078;</b><!--<br> - {{ page.quote-author }}</h3>--></center>
+        </div>
+      </div>
+</section>
+<section class="usa-section usa-graphic_list" style="background-color:#f1f1f1;">
+   <div class="usa-grid usa-graphic_list-row">
+     <div class="usa-width-one-whole usa-media_block">
+       <ul class="usa-accordion" id="transition">
+        <li>
+        <button class="usa-accordion-button " style="font-size:2.2rem;padding-left:0;padding-bottom:20px;"
+          aria-expanded="false"
+          aria-controls="a1">
+          	<img class="usa-media_block-img" src="{{ site.baseurl }}/img/goal-statement-blue.png" alt="PMG_red_target_icon" style="width:40px;margin-right:10px;margin-top:-9px;">&nbsp;&nbsp;Goal Statement
+        </button>
+        <div id="a1" class="usa-accordion-content " style="background-color:#f1f1f1;padding-left:0;">
+          {% if page.statement-bullets %}
+          {{ page.statement-bullets }} <br>
+            <ul>
+              <li>{{ page.bullet-1 }}</li>
+              <li>{{ page.bullet-2 }}</li>
+              <li>{{ page.bullet-3 }}</li>
+              <li>{{ page.bullet-4 }}</li>
+            </ul>
+          {% else %}
+          {{ page.statement }}
+          {% endif %}
+
+        </div>
+      </li><li>
+        <button class="usa-accordion-button" style="font-size:2.2rem;padding-left:0;"
+          aria-expanded="false"
+          aria-controls="a2">
+        	<img class="usa-media_block-img" src="{{ site.baseurl }}/img/challenge_icon_blue.png" alt="PMG_red_target_icon" style="width:40px;margin-right:10px;margin-top:-9px;">&nbsp;&nbsp;The Challenge
+        </button>
+        <div id="a2" class="usa-accordion-content" style="background-color:#f1f1f1;padding-left:0;border-top:">
+          {% if page.challenge-bullets %}
+            {% if page.challenge-bullets-text %}
+          <p>{{ page.challenge-bullets-text }}</p>
+            {% endif %}
+            <ul>
+              <li>{{ page.challenge-bullet-1 }}</li>
+              <li>{{ page.challenge-bullet-2 }}</li>
+              <li>{{ page.challenge-bullet-3 }}</li>
+            </ul>
+          {% else %}
+          {{ page.challenge }}
+          {% endif %}
+        </div>
+      </li><li>
+        <li>
+        <a name="KPI">
+          <button class="usa-accordion-button" style="font-size:2.2rem;padding-left:0;"
+            aria-expanded="false"
+            aria-controls="a3">
+          	<img class="usa-media_block-img" src="{{ site.baseurl }}/img/opportunity_icon_blue.png" alt="PMG_red_target_icon" style="width:40px;margin-right:10px;margin-top:-9px;">&nbsp;&nbsp;The Opportunity
+          </button>
+        </a>
+          <div id="a3" class="usa-accordion-content" style="background-color:#f1f1f1;padding-left:0;">
+            {% if page.opportunity-bullets %}
+            <ul>
+              <li>{{ page.opportunity-bullet-1 }}</li>
+              <li>{{ page.opportunity-bullet-2 }}</li>
+            </ul>
+            {% else %}
+              {{ page.opportunity }}
+            {% endif %}
+          </div>
+        </li>
+        <li>
+          <button class="usa-accordion-button" style="font-size:2.2rem;padding-left:0;"
+            aria-expanded="false"
+            aria-controls="a4">
+            <img class="usa-media_block-img" src="{{ site.baseurl }}/img/action-plan-blue.png" alt="PMG_red_target_icon" style="width:40px;margin-right:10px;margin-top:-9px;">&nbsp;&nbsp;Action Plans and Updates
+          </button>
+          <div id="a4" class="usa-accordion-content" style="background-color:#f1f1f1;padding-left:0;">
+      <div class="usa-grid usa-graphic_list-row">
+          {% if page.action-2021-january %}
+          <div class="usa-width-one-fourth usa-media_block">
+
+              <p><a href="{{ site.baseurl }}{{ page.action-2021-january }}" target="_blank"><b>January 2021</b></a>
+              </p>
+          </div>
+          {% endif %}
+
+          {% if page.action-2020-july %}
+          <div class="usa-width-one-fourth usa-media_block">
+<!--              Uncomment this to add more links to pdf action plans-->
+<!--              <p><a href="{{ site.baseurl }}{{ page.action-2020-december }}" target="_blank"><b>December 2020</b></a>-->
+<!--              </p>-->
+              <p><a href="{{ site.baseurl }}{{ page.action-2020-september }}" target="_blank"><b>September 2020</b></a>
+              </p>
+<!--              <p><a href="{{ site.baseurl }}{{ page.action-2020-july }}" target="_blank"><b>June 2020</b></a>-->
+<!--              </p>-->
+              <p><a href="{{ site.baseurl }}{{ page.action-2020-july }}" target="_blank"><b>July 2020</b></a>
+              </p>
+          </div>
+          {% endif %}
+        {% if page.action-2019-june %}
+        <div class="usa-width-one-fourth usa-media_block">
+          <p><a href="{{ site.baseurl }}{{ page.action-2019-december }}" target="_blank"><b>December 2019</b></a>
+          </p>
+          <p><a href="{{ site.baseurl }}{{ page.action-2019-september }}" target="_blank"><b>September 2019</b></a>
+          </p>
+            <p><a href="{{ site.baseurl }}{{ page.action-2019-june }}" target="_blank"><b>June 2019</b></a>
+            </p>
+         </div>
+       {% endif %}
+        <div class="usa-width-one-fourth usa-media_block">
+            <p><a href="{{ site.baseurl }}{{ page.action-2018-Q4 }}" target="_blank"><b>December 2018</b></a>
+            </p>
+            <p><a href="{{ site.baseurl }}{{ page.action-2018-Q3 }}" target="_blank"><b>September 2018</b></a>
+            </p>
+            <p><a href="{{ site.baseurl }}{{ page.action-2018-Q2 }}" target="_blank"><b>June 2018</b></a>
+            </p>
+             <p><a href="{{ site.baseurl }}{{ page.action-2018-Q1 }}" target="_blank"><b>March 2018</b></a>
+             </p>
+         </div>
+         </div>
+          </div>
+        </li>
+
+      {% if page.title == "Improving Customer Experience with Federal Services" %}
+      <li>
+        <button class="usa-accordion-button" style="font-size:2.2rem;padding-left:0;"
+          aria-expanded="false"
+          aria-controls="a5">
+          <img class="usa-media_block-img" src="{{ site.baseurl }}/img/toolkit.png" alt="PMG_red_target_icon" style="width:40px;margin-right:10px;margin-top:-9px;">&nbsp;&nbsp;Agency Toolkit (A-11 Section 280 Resources)
+        </button>
+      <div id="a5" class="usa-accordion-content" style="background-color:#f1f1f1;padding-left:0;">
+      <div class="usa-grid usa-graphic_list-row">
+        <div class="usa-width-one-half usa-media_block">
+            <p><a href="{{ site.baseurl }}/cx/2020-Capacity-Assessment-Template.xlsx" target="_blank"><b>2020 CX Capacity Assessment</b></a></p>
+            <p><a href="{{ site.baseurl }}/cx/2020-CX-Action-Plan-Template.pptx" target="_blank"><b>2020 CX Action Plan Template</b></a></p>
+            <p><a href="{{ site.baseurl }}/cx/Federal-Service-Worksheet.pptx" target="_blank"><b>Federal Service Worksheet</b></a></p>
+            <p><a href="{{ site.baseurl }}/cx/2020-HISP-List.pdf" target="_blank"><b>2020 HISP List</b></a></p>
+            <p><a href="{{ site.baseurl }}/cx/a11-280.pdf" target="_blank"><b>2020 A-11 Section 280</b></a></p>
+
+        </div>
+        <div class="usa-width-one-half usa-media_block">
+            <p><a href="{{ site.baseurl }}/cx/CX-Feedback-Data-Submission.xlsx" target="_blank"><b>CX Feedback Data Submission Template</b></a></p>
+          <p><a href=" https://community.max.gov/x/cQDMVw" target="_blank"><b>OMB MAX CX Site</b></a></p>
+       </div>
+     </div>
+     </li>
+    {% endif %}
+
+        {% if page.KPI %}
+        <li>
+
+          <button  class="usa-accordion-button" style="font-size:2.2rem;padding-left:0;"
+            aria-expanded="false"
+            aria-controls="a6">
+              <img class="usa-media_block-img" src="{{ site.baseurl }}/img/kpi-blue.png" alt="PMG_red_target_icon" style="width:40px;margin-right:10px;margin-top:-9px;">&nbsp;&nbsp;Key Performance Indicators (KPI)
+          </button>
+          <div id="a6" class="usa-accordion-content" style="background-color:#f1f1f1;padding-left:0;">
+            <div class="usa-grid usa-graphic_list-row">
+              <div class="usa-width-one-whole usa-media_block">
+                <p>View the KPIs for this CAP Goal on our <b>new KPI page</b>! Our new page hosts enhanced visualizations and interactive dashboards that allow you to view key data sets in new and innovative ways. </p>
+                <a class="usa-button usa-button-secondary " href="{{ site.baseurl }}/data/#cap">View KPIs</a>
+                <!--{% include kpi--cap-page.html title=page.KPI %}-->
+              </div>
+              <!--{% if page.KPI-2 %}
+              <div class="usa-width-one-half usa-media_block">
+                {% include kpi--cap-page.html title=page.KPI-2 %}
+              {% endif %}
+              </div>-->
+          </div>
+        </li>
+        {% endif %}
+
+          <li>
+          <button class="usa-accordion-button" style="font-size:2.2rem;padding-left:0;"
+            aria-expanded="false"
+            aria-controls="a7">
+            <img class="usa-media_block-img" src="{{ site.baseurl }}/img/resources.png" alt="PMG_red_target_icon" style="width:40px;margin-right:10px;margin-top:-9px;">&nbsp;&nbsp;Resources
+          </button>
+          <div id="a7" class="usa-accordion-content" style="background-color:#f1f1f1;">
+           {% if page.resource-2-name %}
+                 <p><a target="_blank" href="{{ page.resource-2-url }}"><b>{{ page.resource-2-name }}</b></a></p>
+           {% endif %}
+           {% if page.resource-3-name %}
+                <p><a target="_blank" href="{{ page.resource-3-url }}"><b>{{ page.resource-3-name }}</b></a></p>
+           {% endif %}
+           {% if page.resource-4-name %}
+                <p><a target="_blank" href="{{ page.resource-4-url }}"><b>{{ page.resource-4-name }}</b></a></p>
+           {% endif %}
+           {% if page.resource-5-name %}
+                 <p><a target="_blank" href="{{ page.resource-5-url }}"><b>{{ page.resource-5-name }}</b></a></p>
+           {% endif %}
+           {% if page.resource-6-name %}
+                 <p><a target="_blank" href="{{ page.resource-6-url }}"><b>{{ page.resource-6-name }}</b></a></p>
+           {% endif %}
+           {% if page.resource-7-name %}
+                 <p><a target="_blank" href="{{ page.resource-7-url }}"><b>{{ page.resource-7-name }}</b></a></p>
+           {% endif %}
+           {% if page.resource-8-name %}
+                 <p><a target="_blank" href="{{ page.resource-8-url }}"><b>{{ page.resource-8-name }}</b></a></p>
+           {% endif %}
+           {% if page.resource-9-name %}
+                 <p><a target="_blank" href="{{ page.resource-9-url }}"><b>{{ page.resource-9-name }}</b></a></p>
+           {% endif %}
+           {% if page.resource-10-name %}
+                 <p><a target="_blank" href="{{ page.resource-10-url }}"><b>{{ page.resource-10-name }}</b></a></p>
+          {% endif %}
+          </div>
+        </li>
+        {% if page.innovation %}
+        <li>
+          <a name="cfr"></a>
+
+          <button  class="usa-accordion-button" style="font-size:2.2rem;padding-left:0;"
+            aria-expanded="false"
+            aria-controls="a8">
+              <img class="usa-media_block-img" src="{{ site.baseurl }}/img/innovation.png" alt="PMG_red_target_icon" style="width:40px;margin-right:10px;margin-top:-9px;">&nbsp;&nbsp;Innovation Exchange Sessions
+          </button>
+            <div id="a8" class="usa-accordion-content" style="background-color:#f1f1f1;padding-left:0;">
+            <div class="usa-grid usa-graphic_list-row">
+              <div class="usa-width-one-whole usa-media_block">
+                <p>You are the experts!  Join us for these monthly sessions to learn about exciting new ideas and approaches to grants management from fellow practitioners.  Join our Community to stay informed of future topics. Have an innovation you would like to share? Please email GrantsTeam@omb.eop.gov.</p>
+                <ul>
+                  <li>May 23, 2019<br>
+                      <i><a href="../innovation-sessions/5-23-using-integrated-data-to-support-practice.pdf">View the Presentation: Using Integrated Data to Support Practice</a></i></li>
+                  <li>June 27, 2019<br>
+                      <i><a href="../innovation-sessions/6-27-the-opportunity-project.pdf">View the Presentation: What’s the GIST of Your Grant Programs?</a></i></li>
+                  <li>July 25, 2019<br>
+                      <i><a href="../innovation-sessions/7-25-19-smarter-use-audit-data.pdf">View the Presentation: Smarter Use of Audit Data to Drive Change</a></i></li>
+                  <li>September 26, 2019<br>
+                    <i><a href="../innovation-sessions/9-26-19-grants-intelligence.pdf">View the Presentation: Grants Intelligence – Using Data to Inform Decision-Making</a></i></li>
+                  <li>October 24, 2019<br>
+                  <i><a href="../innovation-sessions/10-24-reducing-administrative-burden-a-states-perspective.pdf">View the Presentation: Reducing Administrative Burden – A State’s Perspective</a></i></li>
+                  <li>December 5, 2019<br>
+                  <i><a href="../innovation-sessions/12-05-reinvent-grants-management.pdf">View the Presentation: ReInvent Grants Management & the Grant-Recipient Digital Dossier</a></i></li>
+                  <li>January 23, 2020<br>
+                  <i><a href="../innovation-sessions/1-23-Proposed-Revisions-2CFR-session.pdf">View the Presentation: Revisions for 2 CFR</a></i></li>
+                  <li>February 27, 2020: B is for Blockchain: Proof of Concept using Distributed Ledger Technology for Multi-Tier Grants Payments<br>
+
+                     <i><a href="../innovation-sessions/grants-innovation-block-chain.pdf">View the Presentation</a></i><br>
+                     <i><a href="https://meet.gsa.gov/pvmr67iosxlw/?OWASP_CSRFTOKEN=be105fb1e7470102f6478d3021160ec49bbf88eb50ddb5aae9e45b7624ab9efb">View the Recording</a></i></li>
+
+                  <li>March 26, 2020: Administrative Relief for Recipients and Applicants Impacted by the Novel Coronavirus and Implementation of The GREAT Act<br>
+                  <i><a href="../innovation-sessions/Administrative_Relief_for_Recipients_and_Applicants_Impacted_by_the_Novel_Coronavirus_and_Implementation_of_The_GREAT_Act.pdf">View the Presentation</a></i><br>
+                  <i><a href="https://meet.gsa.gov/pd5ky3cwbe5c/?OWASP_CSRFTOKEN=4b25e875bc92245cbbf41f0528da057f2fdd317793441f7c166a310d1a26fad6">View the Recording</a></i></li>
+
+                    <li>April 16, 2020: M-20-21, Implementation Guidance for Supplemental Funding Provided in Response to the Coronavirus Disease (COVID-19”)<br>
+                        <i><a href="../innovation-sessions/Apr 16 2020 GIEx slides - Final (for posting).pdf">View the Presentation</a></i><br>
+                        <i><a href="https://meet.gsa.gov/p7a5k7b8sf87/">View the Recording</a></i></li>
+
+                    <li>September 9, 2020: 2 CFR Revisions<br>
+                        <i><a href="../innovation-sessions/Innovation Exchange 2 CFR Revisions.pdf">View the Presentation</a></i><br>
+                        <i><a href="https://meet.gsa.gov/p8l0dgy15ekz/?OWASP_CSRFTOKEN=61fd43829f9924900c20e7c1f2add6c90e1697db95fe8e0c7a86d3a55f8e6db0&proto=true">View the Recording</a></i></li>
+
+                </ul>
+              </div>
+          </div>
+        {% endif %}
+
+        {% if page.CFR %}
+        <li>
+
+          <button  class="usa-accordion-button" style="font-size:2.2rem;padding-left:0;"
+            aria-expanded="true"
+            aria-controls="a9">
+              <img class="usa-media_block-img" src="{{ site.baseurl }}/img/resources.png" alt="PMG_red_target_icon" style="width:40px;margin-right:10px;margin-top:-9px;">&nbsp;&nbsp;2 CFR Revisions Resources
+          </button>
+            <div id="a9" class="usa-accordion-content" style="background-color:#f1f1f1;padding-left:0;">
+            <div class="usa-grid usa-graphic_list-row">
+              <div class="usa-width-one-whole usa-media_block" style="display: block">
+                <p>OMB released revisions to Title 2 of the Code of Federal Regulations, beginning a foundational shift toward results-oriented accountability for Federal grants. Below you will find additional information and resources related to the revisions.</p>
+                <ul>
+                    <li> <i><a href=" https://www.federalregister.gov/documents/2020/08/13/2020-17468/guidance-for-grants-and-agreements">Federal Registrar Notice</a></i></li>
+                    <li> <i><a href="https://grantsinnovation_aug27_2020_2cfr.eventbrite.com">August Innovation Exchange Session</a></i></li>
+                    <li> <i><a href="{{ site.baseurl }}/CAP/20200812-2-CFR-Revision-Redline_Final.pdf">2 CFR Revisions (Redlined)</a></i></li>
+                    <li> <i><a href="{{ site.baseurl }}/CAP/Sec. 889 of 2019 NDAA_FAQ_20201124.pdf">Sec. 889 of the 2019 NDAA (2 CFR 200.216) Frequently Asked Questions</a></i></li>
+                    <li> <i><a href="https://www.cfo.gov/wp-content/uploads/2020/12/2-CFR-Crosswalk_20201106.xlsx">2 CFR Revisions (85 FR 49506) Crosswalk</a></i></li>
+                    <li> <i><a href="https://www.cfo.gov/knowledge-sharing/#priority_area=.financial-assistance&type=.helpful-link">View archived documents</a></i></li>
+
+<!--                  <li><i><a href="https://meet.gsa.gov/p78nmsdy0ty7/?OWASP_CSRFTOKEN=5dd88967c74c3a49bed884327df076ffa70850770d68bfcca5e163d92b97c365"> View the Recording</a>: Revisions to 2 CFR</i></li>-->
+
+<!--                  <li> <i><a href="../innovation-sessions/Grants-CAP-Goal-Proposed-2CFR-Revision1.pdf">Federal Register Reference Document: Revisions for 2 CFR (Tracked Changes)</a></i></li>-->
+<!--                  <li><i><a href="https://www.federalregister.gov/documents/2020/01/22/2019-28524/guidance-for-grants-and-agreements#open-comment">View the Federal Register Notice and Provide Comments </a></i></li>-->
+<!--                  <li><i><a href="../innovation-sessions/CFR-listening-session.pdf">View the "Listening Session" Presentation</a></i></li>-->
+                </ul>
+              </div>
+          </div>
+        {% endif %}
+
+
+
+</section>
+<section class="usa-section usa-graphic_list" style="background-color:#205493;color:#ffffff;">
+   <div class="usa-grid usa-graphic_list-row">
+ {% if page.CAP-event-title %}
+     <div class="usa-width-two-thirds usa-media_block">
+       <h2>News</h2>
+       {% for post in site.tags[page.tag] limit:2 %}
+       {% if page.tag %}
+       <hr>
+       <p class="card-tag" style="color:#ffffff;margin-bottom:0px;">{{ post.date | date: '%B %d, %Y' }}</p>
+         <a style="color:#ffffff;text-decoration:none;" href="{{ site.baseurl }}{{ post.permalink }}">
+           <h3 style="margin-top:5px;">{{ post.title }}</h3>
+         </a>
+         <p>{{ post.description}}</p>
+         {% endif %}
+         {% endfor %}
+     </div>
+     <div class="usa-width-one-third usa-media_block" style="background-color:rgba(255,255,255,1);color:#205493;padding:20px;height:400px;border-radius:25px;">
+        <h2>&#128467;&nbsp;Upcoming Events</h2>
+        <hr style="color:#ffffff;">
+        <p style="font-size:1.1em;margin-bottom:0px;"><b>{{ page.CAP-event-title}}</b>, <em>{{ page.CAP-event-date}}</em></p>
+        <p style="margin-top:5px;">{{ page.CAP-event-text }}</p>
+        {% if page.CAP-event-button %}
+          <p class="card-tag" style="float:right;margin-top:10px;font-size:.7em;"><a style="text-decoration:none;background-color:#205493;color:#ffffff;padding:10px;border-radius:15px;" href="{{ page.event-link }}">{{ page.CAP-event-button }} &#10095;</a></p>
+        {% endif %}
+  {% else %}
+  <div class="usa-width-one-whole usa-media_block">
+   <h2>News</h2>
+   {% if page.sqs %}
+  <hr>
+   <p class="card-tag" style="color:#ffffff;margin-bottom:0px;">January 11, 2021</p>
+     <a style="color:#ffffff;text-decoration:none;" href="https://ussm.gsa.gov/qsmo/#details">
+       <h3 style="margin-top:5px;">The Department of Health and Human Services (HHS) is designated as the Quality Service Management Office (QSMO) for Grants Management</h3>
+     </a>
+     <p>The Office of Management and Budget (OMB) has designated HHS as the QSMO for Grants Management.</p>
+
+      
+      
+      <hr>
+   <p class="card-tag" style="color:#ffffff;margin-bottom:0px;">June 29, 2020</p>
+     <a style="color:#ffffff;text-decoration:none;" href="https://ussm.gsa.gov/qsmo/#details">
+       <h3 style="margin-top:5px;">The U.S. Department of the Treasury and General Services Administration (GSA) are formally designated as Quality Service Management Organizations (QSMO) </h3>
+     </a>
+     <p>The Office of Management and Budget (OMB) has announced Treasury will serve as the QSMO for Core Financial Management services. GSA will be the QSMO for Civilian HR Transaction Services, specifically Compensation Management, Work Schedule and Leave Management services.</p>
+
+     <hr>
+     <p class="card-tag" style="color:#ffffff;margin-bottom:0px;">April 27, 2020</p>
+       <a style="color:#ffffff;text-decoration:none;" href="https://ussm.gsa.gov/qsmo/">
+         <h3 style="margin-top:5px;">Administration Announces DHS CISA as the designated QSMO for Cybersecurity Services</h3>
+       </a>
+       <p>The Office of Management and Budget (OMB) has designated the Department of Homeland Security (DHS) Cybersecurity and Infrastructure Security Agency (CISA) as the Quality Service Management Office for Cybersecurity Services, specifically Security Operations Center standardization, Vulnerability Management standardization, and DNS Resolver service.</p>
+   {% endif %}
+
+  {% for post in site.tags[page.tag] limit:2 %}
+
+  {% if page.tag %}
+    <hr>
+    <p class="card-tag" style="color:#ffffff;margin-bottom:0px;">{{ post.date | date: '%B %d, %Y' }}</p>
+      <a style="color:#ffffff;text-decoration:none;" href="{{ site.baseurl }}{{ post.permalink }}">
+        <h3 style="margin-top:5px;">{{ post.title }}</h3>
+      </a>
+      <p>{{ post.description}}</p>
+  {% endif %}
+  {% endfor %}
+  </div>
+{% endif %}
+     </div
+   </div>
+</section>
+<!--<section class="usa-section usa-section-leader usa-graphic_list">
+  <div class="usa-grid usa-graphic_list-row">
+    <div class="usa-width-two-thirds usa-media_block">
+      <h2>News</h2>
+      {% for post in site.tags[page.tag] limit:2 %}
+      {% if page.tag %}
+      <p class="card-tag" style="color:#ffffff;">{{ post.date | date: '%B %d, %Y' }}</p>
+        <a style="color:#ffffff;" href="{{ site.baseurl }}{{ post.permalink }}">
+          <h3 style="margin-top:1em;">{{ post.title }}</h3>
+        </a>
+        <p>{{ post.description}}</p>
+        {% for tag in include.tags %}
+          <span class="usa-label">
+            <a  href="{{ site.baseurl }}/tags/{{ tag }}/">{{ tag }}</a>
+          </span>
+          {% endfor %}
+          <hr align="left">
+        {% endif %}
+        {% endfor %}
+      </div>
+      <div class="usa-width-one-third usa-media_block">
+        <h2>Upcoming Eventsfdfdasfdsafdsasgfsdgfsdgsdgdfsgdsgsdgdfsgdsgdsgfds</h2>
+      </div>
+   </div>
+ </section>-->
+
+
+{% include CAP-icons-set.html %}

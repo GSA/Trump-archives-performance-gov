@@ -1,0 +1,52 @@
+---
+layout: base
+---
+
+
+{% include main_header.html %}
+
+<header class="usa-header usa-header-basic cx-breadcrumb">
+
+  <div class="usa-grid">
+    <div class="usa-grid-full">
+      <a href="{{ site.baseurl }}/">Home</a> &nbsp; &gt; &nbsp;  <a href="{{ site.baseurl }}/cx/">Customer Experience</a> &nbsp;  &gt; &nbsp; CX Profiles
+    </div>
+  </div>
+
+</header>
+
+<main class="usa-grid usa-section usa-content usa-layout-docs cx-dashboard" id="main-content">
+
+  {{ content }}
+
+<div class="cx-profile-heading usa-grid-full" markdown="1">
+{% for hisp in site.data.hisps %}
+
+{% if hisp.service == hisp.bureau %}
+  {% assign hisp_bureau_display = '' %}
+{% else %}
+  {% capture hisp_bureau_display %}{{ hisp.bureau }}, {% endcapture %}
+{% endif %}
+
+<div class="cx-hisp-tile">
+    <div class="usa-width-one-fourth cx-agency-logo {{ hisp.department_abbreviation }}-logo">
+      <img src="{{ site.baseurl }}/img/cx/agencies/{{ hisp.department_abbreviation }}-seal.png" alt="{{ this_hisp.department }} seal">
+    </div>
+
+    <div class="cx-hisp-intro usa-width-three-fourths" markdown="1">
+
+      <h2 class="cx-profile-headline cx-agency-heading">
+        <a href="{{ site.baseurl }}/cx/dashboard/{{ hisp.department_abbreviation }}/{{ hisp.service_abbreviation }}">{{ hisp.service }}</a>
+      </h2>
+      <h3 class="cx-agency-subheading">{{ hisp_bureau_display }}{{ hisp.department }}</h3>
+
+    </div>
+
+  </div>
+
+{% endfor %}
+  </div>
+
+</main>
+
+{% include main_footer.html %}

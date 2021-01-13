@@ -1,0 +1,91 @@
+---
+layout: navigation_PMA
+---
+
+<section class="usa-section usa-section-dark usa-graphic_list">
+   <div class="usa-grid usa-graphic_list-row">
+     <div class="usa-width-one-half usa-media_block">
+       <div class="usa-media_block-body">
+         <a href="{{ site.baseurl }}/news" style="color: #d6d7d9; font-weight: bold; text-decoration:none;">
+           &#10094; &nbsp; Back to News
+         </a>
+
+           <p class="card-tag-post"> {{ page.agency }}</p>
+              <h1 style="margin-top: 0em;">{{ page.title }}</h1><br>
+                {% if page.byline %}
+                  <p style="font-size:18px;">{{ page.byline }}</p>
+                {% endif %}
+              <h3 style="color:#ffffff;"><i> {{ page.subtitle }}</i></h3>
+              {% include post-author.html context="page" %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="usa-section usa-graphic_list">
+   <div class="usa-grid usa-graphic_list-row">
+      <div class="usa-width-two-thirds usa-media_block">
+        <div class="usa-media_block-body">
+          <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%B %-d, %Y" }}</time>
+
+          <span class="card-tag-text">Tags:</span><br>
+          <span class="post-tags" itemprop="keywords">
+            {% for tag in page.tags %}
+              {% unless tag == 'sharing' or tag == 'IT' or tag == 'data' or tag == 'workforce' or tag == 'cx' or tag == 'low-to-high' or tag == 'cm' or tag == 'grants' or tag == 'payments' or tag == 'spending' or tag == 'acquisition' or tag == 'infrastructure' or tag == 'credentialing' or tag == 'lab' %}
+              <span class="usa-label">
+                <a style="color:#ffffff;" href="{{ site.baseurl }}/tags/{{ tag}}/">{{ tag }}</a>
+              </span>
+              {% endunless %}
+            {% endfor %}
+          </span>
+
+          {% include share-bar.html %}
+
+          <p>
+            {{ content }}
+          </p>
+      </div>
+<br />
+      {% if page.previous or page.next %}
+        <section class="post-pagination usa-grid">
+          <div class="usa-width-one-half">
+            {% if page.previous %}
+              <a href="{{ site.baseurl }}{{ page.previous.url }}" style="text-decoration:none; font-weight: bold;">
+                <span class="link-arrow-left">
+                &#10094;  Previous Post
+                </span>
+                <h5>&ldquo;{{ page.previous.title }}&rdquo;</h5>
+              </a>
+            {% endif %}
+          </div>
+          <div class="usa-width-one-half">
+            {% if page.next %}
+                <a href="{{ site.baseurl }}{{ page.next.url }}" style="text-decoration:none; font-weight: bold;">
+                  <span class="link-arrow-right">
+                    Next Post &#10095;
+                                    </span>
+                  <h5>&ldquo;{{ page.next.title }}&rdquo;</h5>
+                </a>
+            {% endif %}
+          </div>
+        </section>
+      {% endif %}
+
+
+
+    </div>
+      <aside class="usa-width-one-third section-info section-info-gray">
+            <ul>
+              {% include related-posts.html %}
+            </ul>
+            <div class="margin-spacing pad-top-bottom background-medium">
+            <div class="usa-grid usa-flex-baseline">
+              <h2>Want to see your story on Performance.gov?</h2>
+              <div>
+        <a href="mailto:pgovsupport@gsa.gov"><button class="usa-button usa-button-secondary">Contact us</button></a>
+      </div>
+    </div>
+  </div>
+      </aside>
+    </div>
+  </section>

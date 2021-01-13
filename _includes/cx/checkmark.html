@@ -1,0 +1,21 @@
+{% if include.future == "TRUE" %}
+<div style="width: 70px; float: left; margin-right: 15px;">
+  <i class="fa fa-circle" style="color: #999999;"></i>
+  Q{{ include.quarter }} {{ include.year }}
+</div>
+{% elsif include.has_data == "TRUE" %}
+<div style="width: 70px; float: left; margin-right: 15px;">
+  <i class="fa fa-check-circle" style="color: #538200;"></i>
+  Q{{ include.quarter }} {{ include.year }}
+</div>
+{% elsif include.has_data == "PARTIAL" %}
+<div style="width: 70px; float: left; margin-right: 15px;">
+  <i class="fa fa-exclamation-circle" style="color: #ffbe2e;"></i>
+  Q{{ include.quarter }} {{ include.year }}
+</div>
+{% else %}
+<div style="width: 70px; float: left; margin-right: 15px;">
+  <i class="fa fa-times" style="color: red;"></i>
+  Q{{ include.quarter }} {{ include.year }}
+</div>
+{% endif %}

@@ -1,0 +1,155 @@
+---
+title: "Performance.gov/data (Beta)"
+layout: navigation_PMA
+agency_dir:
+permalink: /data/
+
+#twitter variables
+summary: summary
+description: KPIs measure the performance of cross-agency priority goals in effecting change across multiple agencies.
+
+---
+<script type="text/javascript" src="https://d3js.org/d3.v4.js"></script>
+<script>
+var chartDiv = document.getElementById("block-system-main");
+function myFunction() {
+  var svgtest = d3.select(chartDiv);
+
+  if (!svgtest.empty()) {
+  document.reload();
+  }
+  else {
+    return;
+}}
+
+if(performance.navigation.type == 2){
+  console.log( 'Page load due to a back button click. Reloading to refresh the Performance.gov report. ' );
+  location.reload(true);
+}
+
+</script>
+
+
+<section id="image-data" class="usa-section usa-graphic_list">
+  <div class="usa-grid usa-graphic_list-row" style="padding:0">
+   <div class="usa-width-one-whole usa-media_block">
+    <h1 style="color:#00bde3;padding-bottom:0px;">Performance.gov/data (Beta)</h1>
+    <h2 style="color:#ffffff;padding-bottom:15px;margin-top:0px">Visualizing agency and performance data</h2>
+    <a class="usa-button usa-button-secondary " style="background-color:#07648d;" href="#agency" >Agency Data</a>
+    <a class="usa-button usa-button-secondary " style="background-color:#a9aeb1;" href="#cap" href="{{ site.baseurl }}/##" >Cross Agency Priority Goal Data</a>
+    <a class="usa-button usa-button-secondary " href="mailto:PgovSupport@GSA.gov" >Give us Feedback</a>
+
+    </div>
+</section>
+
+
+
+<section class="usa-section usa-graphic_list" >
+  <div class="usa-grid usa-graphic_list-row" style="padding:0">
+   <div class="usa-width-one-whole usa-media_block" style="margin-bottom:15px;">
+
+    <p> We are working to bring you more data with enhanced visualizations and interactive dashboards that allow you to view agency performance measures and key data sets in new and innovative ways. Our dashboards are interactive. Some of our larger datasets may take a few seconds to load. For optimal user experience, we recommend using a desktop or laptop computer with a good internet connection. You can also download the data by clicking into the visualizations and then selecting "Download" or by navigating to the original data sources found in the red buttons. </p>
+
+   </div>
+ </div>
+
+  <!--  *********************************FOUR DASHBOARDS EMBEDDED *************************************************-->
+
+
+  <!--<section class="usa-section usa-graphic_list" >
+    <div class="usa-grid usa-graphic_list-row" style="padding:0">
+
+   <div class="usa-width-one-whole usa-media_block">
+    <h2><a name="sba"></a> Small Business Administration (SBA) Loan Data</h2>
+    <p style="margin-bottom:0px;">Explore over 10 years of SBA loan data geographically and overlaid with population and GDP data for context. Drill down to the individual loan level and filter by loan type and state. To learn more, view the <a href="https://www.sba.gov/sites/default/files/articles/Loan_Chart_HQ_February_2017_Version_B.pdf">overview of SBA Loan Guaranty Programs.</a></p>
+    <h3>Nationwide SBA Loan Distributions</h3>
+    <p> Click on a state to update the graph below the map. To reset the zoom in the visualization and see beyond the continental U.S., please click the home icon on the map.</p>
+    <p>The Microloan data below represent the loan dollars distributed to intermediaries, not the number of loans or loan dollars distributed to individual small businesses participating in the microloan program.</p>
+  </div>
+  <div class="usa-width-one-whole usa-media_block" id="sba-desktop">
+    <script>
+
+    myFunction();
+    </script>
+       <iframe src="https://d2d.gsa.gov/tableau-report-for-embed/8474" id="no-frame-border" frameborder="0" style="height:1000px;width:1091px;" onload="myFunction()"></iframe>
+
+
+       <p class="card-tag" style="float:right;margin-top:30px;margin-bottom:30px;font-size:.7em;"><a style="text-decoration:none;background-color:#e31c3d;color:#ffffff;padding:10px;border-radius:25px;" href="https://www.usaspending.gov/#/download_center/award_data_archive">Loan Data &#10095;</a>
+
+       <p class="card-tag" style="float:right;margin-top:30px;margin-bottom:30px;margin-right:20px;font-size:.7em;"><a style="text-decoration:none;background-color:#e31c3d;color:#ffffff;padding:10px;border-radius:25px;" href="https://www.census.gov/data/datasets/time-series/demo/popest/2010s-national-total.html">Census Data &#10095;</a></p>
+
+       <p class="card-tag" style="float:right;margin-top:30px;margin-bottom:30px;font-size:.7em;margin-right:20px;"><a style="text-decoration:none;background-color:#e31c3d;color:#ffffff;padding:10px;border-radius:25px;" href="https://www.bea.gov/data/gdp/gdp-state">GDP Data &#10095;</a>
+
+    </div>
+
+    <div class="usa-width-one-whole usa-media_block" id="sba-mobile">
+         <iframe src="https://d2d.gsa.gov/tableau-report-for-embed/8474" id="no-frame-border" frameborder="0" style="height:1000px;width:100%" onload="myFunction()"></iframe>
+
+         <p class="card-tag" style="float:right;margin-top:30px;margin-bottom:30px;font-size:.7em;"><a style="text-decoration:none;background-color:#e31c3d;color:#ffffff;padding:10px;border-radius:25px;" href="https://www.usaspending.gov/#/download_center/award_data_archive">Loan Data &#10095;</a>
+
+         <p class="card-tag" style="float:right;margin-top:30px;margin-bottom:30px;margin-right:20px;font-size:.7em;"><a style="text-decoration:none;background-color:#e31c3d;color:#ffffff;padding:10px;border-radius:25px;" href="https://www.census.gov/data/datasets/time-series/demo/popest/2010s-national-total.html">Census Data &#10095;</a></p>
+
+         <p class="card-tag" style="float:right;margin-top:30px;margin-bottom:30px;font-size:.7em;margin-right:20px;"><a style="text-decoration:none;background-color:#e31c3d;color:#ffffff;padding:10px;border-radius:25px;" href="https://www.bea.gov/data/gdp/gdp-state">GDP Data &#10095;</a>
+      </div>
+
+  <div class="usa-width-one-whole usa-media_block"  id="sba-desktop">
+    <h3>Heat Map of Loan Distributions to the County Level</h3>
+    <p>To reset the zoom in the visualization and apply selected filters, please click the home icon on the map.</p>
+        <iframe src="https://d2d.gsa.gov/tableau-report-for-embed/8472" id="no-frame-border" frameborder="0" style="height:655px;width:1091px;"></iframe>
+
+        <p class="card-tag" style="float:right;margin-top:30px;margin-bottom:30px;font-size:.7em;"><a style="text-decoration:none;background-color:#e31c3d;color:#ffffff;padding:10px;border-radius:25px;" href="https://www.usaspending.gov/#/download_center/award_data_archive">Loan Data &#10095;</a>
+  </div>
+
+
+    <div class="usa-width-one-whole usa-media_block" id="sba-mobile">
+      <h3>Heat Map of Loan Distributions to the County Level</h3>
+      <p>To reset the zoom in the visualization and apply selected filters, please click the home icon on the map.</p>
+          <iframe src="https://d2d.gsa.gov/tableau-report-for-embed/8472" id="no-frame-border" frameborder="0" style="height:740px;width:100%"></iframe>
+
+          <p class="card-tag" style="float:right;margin-top:30px;margin-bottom:30px;font-size:.7em;"><a style="text-decoration:none;background-color:#e31c3d;color:#ffffff;padding:10px;border-radius:25px;" href="###">Loan Data &#10095;</a>
+    </div>
+
+
+  </div>
+</section>-->
+<a name="agency"></a>
+<section class="usa-section" >
+  <div class="usa-grid usa-graphic_list-row" style="padding:0">
+  <div class="usa-width-one-whole usa-media_block" >
+  <h1 class="card-tag" style="font-size:2.2rem;">Agency Data</h1>
+
+  <p>Explore over 10 years of SBA loan data, GSA's 28 performance indicators, and NRC budget and performance data below. </p>
+  </div>
+</div>
+
+{% include agency-data-menu.html   %}
+<section class="usa-section usa-graphic_list" style="padding-top:0px;">
+   <div class="usa-grid usa-graphic_list-row">
+     <div class="usa-width-one-whole usa-media_block">
+      <div id="wrapper-letter"></div>
+    </div>
+  </div>
+</section>
+
+  <a name="cap"></a>
+  <section class="usa-section" >
+    <div class="usa-grid usa-graphic_list-row" style="padding:0">
+    <div class="usa-width-one-whole usa-media_block" >
+    <h1 class="card-tag" style="font-size:2.2rem;">Cross Agency Priority Goal Data</h1>
+    <p>The <a href="{{site.baseurl}}/pma/">President’s Management Agenda</a> identifies Cross-Agency Priority (CAP) Goals to target those areas where multiple agencies must collaborate to effect change and report progress in a manner the public can easily track. Below are some of the key indicators that will be used to measure how different goals are performing. You can explore them using the dropdown menus below.</p>
+
+    </div>
+  </div>
+
+  {% include KPI-menu.html %}
+  <section class="usa-section usa-graphic_list" style="padding-top:0px;">
+     <div class="usa-grid usa-graphic_list-row">
+       <div class="usa-width-one-whole usa-media_block">
+        <div id="wrapper"></div>
+      </div>
+    </div>
+  </section>
+
+<!--Custom Js file here ... -->
+<script src="{{ site.baseurl }}/js/script.js"></script>
+<script src="https://use.fontawesome.com/23b00d63e4.js"></script>

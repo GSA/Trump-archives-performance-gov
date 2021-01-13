@@ -1,0 +1,43 @@
+---
+layout: navigation_PMA
+---
+
+
+<section class="usa-section usa-section-dark usa-graphic_list">
+  <div class="usa-grid usa-graphic_list-row">
+    <div class="usa-width-one-whole usa-media_block">
+      <a href="{{ site.baseurl }}/news" style="text-decoration:none;">
+        <b>&#10094; &nbsp; Back to News</a></b>
+      <h1>{{ page.title }}</h1>
+      {% assign numberof = page.posts | size %}
+      <p>{{ page.excerpt }}</p>
+        {% if page.agency %}
+      <a href="{{ site.baseurl }}{{ page.agency }}"><button class="usa-button usa-button-secondary">Learn about the Agency's Strategic Plan</button></a>
+        {% endif %}
+  </div>
+</div>
+</section>
+
+
+
+<section class="usa-section usa-graphic_list">
+  <div class="usa-grid usa-graphic_list-row">
+    <div class="usa-width-one-whole usa-media_block">
+        <div class="usa-media_block-body">
+        {% for post in site.tags[page.tag] %}
+        <p class="card-tag">{{ post.date | date: '%B %d, %Y' }}</p>
+
+          <a href="{{ site.baseurl }}{{ post.permalink }}">
+            <h3 style="margin-top:1em;">{{ post.title }}</h3>
+          </a>
+          <p>{{ post.description}}</p>
+
+          {% for tag in include.tags %}
+            <span class="usa-label">
+              <a href="{{ site.baseurl }}/tags/{{ tag }}/">{{ tag }}</a>
+            </span>
+            {% endfor %}
+            <hr align="left">
+            {% endfor %}      </div>
+    </div>
+        </div>

@@ -1,0 +1,46 @@
+<!--HEAD FOR THE HOMEPAGE ONLY. DO NOT USE FOR OTHER PAGES-->
+
+  <link rel="shortcut icon" href="{{ site.baseurl }}/img/favicons/performance-gov-favicon.png" type="image/x-icon">
+<meta content="text/html; charset=UTF-8" name="Content-Type" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{ page.title }} | {{ site.title }}</title>
+<!-- Update the link path to where your stylesheet file is located. For example: /path/to/your/assets/css/lib/uswds.min.css -->
+<link rel="stylesheet" href="{{ site.baseurl }}/css/uswds.css">
+<link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
+
+<!-- Twitter cards -->
+<meta name="twitter:site"    content="@{{ site.twitter_username }}">
+<meta name="twitter:creator" content="@{{ page.author }}">
+<meta name="twitter:title"   content="{{ page.title }}">
+
+{% if page.description %}
+<meta name="twitter:description" content="{{ page.description }}">
+{% else %}
+<meta name="twitter:description" content="{{ site.description }}">
+{% endif %}
+
+{% if page.image %}
+<meta name="twitter:card"  content="{{ page.summary }}">
+<meta name="twitter:image:src" content="{{ site.url }}{{ page.image }}">
+{% else %}
+<meta name="twitter:card"  content="summary">
+<meta name="twitter:image:src" content="{{ site.url }}/img/performance-gov-twitter.png?'.uniqid().'">
+{% endif %}
+<!-- end of Twitter cards -->
+<!--other social media sharing: Facebook and LinkedIn-->
+<meta property="og:title" content="{{ page.title }}">
+<meta property="og:description" content="{{ page.description }}">
+<meta property="og:image" content="{{ site.url }}{{ site.baseurl }}{{ page.image }}">
+<meta property="og:image:width" content="600" />
+<meta property="og:image:height" content="600" />
+<meta property="og:type"  content="article" />
+<meta property='og:url' content="{{ site.url }}{{ site.baseurl }}{{ page.url }}" />
+<!--end of Facebook and LinkedIn-->
+
+<script src="{{ site.baseurl }}/js/jquery.min.js"></script>
+<script src="{{ site.baseurl }}/js/uswds.min.js"> </script>
+<script src="https://unpkg.com/isotope-layout@3.0/dist/isotope.pkgd.js"></script>
+<!-- We participate in the US government's analytics program. See the data at analytics.usa.gov. -->
+<!-- Performance.gov 2018 -->
+<script async type="text/javascript" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=GSA" id="_fed_an_ua_tag"></script>
+<script src="https://use.fontawesome.com/23b00d63e4.js"></script>

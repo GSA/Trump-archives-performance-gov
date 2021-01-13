@@ -1,0 +1,17 @@
+hr.style-two {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(204, 180, 36, 0.75), rgba(0, 0, 0, 0));
+    margin-top:25px;
+    margin-bottom: 25px;
+}
+
+#image-burden {
+    background-image: url(../img/burden-reduction/burden-gears.png);
+    object-fit: fill;
+}
+
+#gray-section {
+    background-image: url(../img/burden-reduction/gray-section.png);
+    object-fit: fill;
+}

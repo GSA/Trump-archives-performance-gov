@@ -6,8 +6,8 @@ layout: navigation_PMA
   <div class="usa-grid usa-graphic_list-row">
     <div class="usa-width-one-half usa-media_block">
       <div class="usa-media_block-body">
-        <a href="{{ site.baseurl }}/cx/blog" style="text-decoration:none;color:#d6d7d9;">
-          &#10094; &nbsp; Back to the Federal CX Blog
+        <a href="{{ site.baseurl }}/cx/blog/" style="text-decoration:none;color:#d6d7d9;">
+          &#10094; &nbsp; Back to Federal CX Blog
         </a>
 
         <p class="card-tag-post"> {{ page.agency }}</p>
@@ -27,21 +27,18 @@ layout: navigation_PMA
     <div class="usa-width-two-thirds usa-media_block">
       <div class="usa-media_block-body">
         <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%B %-d, %Y" }}</time>
-
+        <br>
         <span class="card-tag-text">Tags:</span><br>
         <span class="post-tags" itemprop="keywords">
           {% for tag in page.tags %}
           {% unless tag == 'sharing' or tag == 'IT' or tag == 'data' or tag == 'workforce' or tag == 'cx' or tag == 'low-to-high' or tag == 'cm' or tag == 'grants' or tag == 'payments' or tag == 'spending' or tag == 'acquisition' or tag == 'infrastructure' or tag == 'credentialing' or tag == 'lab' %}
           <span class="usa-label">
-            <a style="color:#ffffff;" href="{{ site.baseurl }}/tags/{{ tag}}/">{{ tag }}</a>
+            {{ tag }}
           </span>
           {% endunless %}
           {% endfor %}
 
-          {% include share-bar.html %}
-          <p>
-            {{ content }}
-          </p>
+          {{ content }}
       </div>
       <br />
       {% if page.previous or page.next %}

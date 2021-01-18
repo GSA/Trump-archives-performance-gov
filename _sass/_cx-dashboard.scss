@@ -284,7 +284,7 @@ height : 75px;
 }
 
 .cx-hero {
-	background-image: url("../img/cx/cx-header.jpg");
+	background-image: url("../cx/assets/images/cx-header.jpg");
 	background-position: bottom;
 	min-height: 500px;
 
@@ -295,7 +295,7 @@ height : 75px;
 }
 
 .cx-hero.projects-page {
-	background-image: url("../cx/images/cx-header-illustration-01.png");
+	background-image: url("../cx/assets/images/cx-header-illustration-01.png");
 }
 
 // Custom Touchpoints tab styling
@@ -324,4 +324,10 @@ height : 75px;
 
 .width-full{
   width:100%;
+}
+
+blockquote {
+	color: #0071bc;
+	font-size: 1.25em;
+	font-style: italic;
 }

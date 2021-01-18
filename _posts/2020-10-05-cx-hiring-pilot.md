@@ -37,15 +37,15 @@ This undertaking required significant coordination and expertise. U.S. Digital S
 
 To coordinate the hiring action, USDS and the cross-agency Federal Customer Experience Team joined forces with OPM Staff Acquisition to make this hiring action a success. As reflected in the hiring diagram below, this hiring strategy requests SMEs, comprised of high performing government employees working in the same position at or above the grade- level being hired, work with HR professionals for two days to document the required specialized experience in the form of competencies and proficiency levels. Next, they create pass/fail assessments (such as written prompts or structured interviews) to evaluate applicants against those requirements. Only applicants who pass both assessments, and pass an initial SME resume and work sample review, are eligible for the position. Veterans’ preference is applied to the applicants who are found eligible after passing the two qualifying assessments.
 
-<img src="../img/blog/cx-hiring-image-1.png">
+<img src="{{ site.baseurl }}/img/blog/cx-hiring-image-1.png">
 <br>
-<img src="../img/blog/cx-hiring-image-2.png">
+<img src="{{ site.baseurl }}/img/blog/cx-hiring-image-2.png">
 
 In this pilot, after applicants applied for the position, the SMEs reviewed a design portfolio work sample and three pages of each resume submitted to see which applicants would qualify for entry into the first of two assessments.
 
 The 124 applicants who passed resume review, took the first assessment which was an asynchronous interview using the HireVue platform. Applicants received a link to record themselves answering four questions. Applicants had a minute to prepare their answer and then had multiple chances to record themselves answering the questions using audio. No video or Artificial Intelligence required. Those who passed this round proceeded to a longer one-on-one structured phone interview with a CX SME. HR played a key role throughout the process training the SMEs and reviewing their justifications about why they were or were not moving each applicant forward. Only applicants who met the minimum qualification bar and demonstrated proficiency for each required competency were considered eligible for the position. At the end, of the 44 applicants who passed both assessment rounds, HR adjudicated Veterans preference, put applicants into categories based on if they “exceed” the requirements during the structured phone interview, and issued the certificates. The certificates were issued to hiring managers exactly 6 weeks after the job announcement first posted.
 
-<img src="../img/blog/cx-hiring-image-3.png">
+<img src="{{ site.baseurl }}/img/blog/cx-hiring-image-3.png">
 
 <div class="testimonial-blockquote">
 <p>This is the smartest government thing I've ever seen. The way that it is multi-agency, you only have to apply once. It didn't involve all the super long and crazy paperwork that you usually associate with a government job. It makes it much more doable.” - CX Applicant
@@ -54,7 +54,7 @@ The 124 applicants who passed resume review, took the first assessment which was
 
 One of the highlights of the process is that private sector applicants don’t need to know the typical tricks of federal employment, including much longer federal style resumes and the problem of over inflation on self-assessment questionnaires. In this process, SMEs are doing the evaluation, not the applicants; and, applicants with 2-3 page resumes are on equal footing as federal applicants with much lengthier resumes. The chart below compares the sectors where applicants came from versus where the qualified applicant pool came from, and shows how federal employees, contractors, and private sector applicants all made it through this process.
 
-<center><img src="../img/blog/cx-hiring-image-4.png" style="width:450px"></center>
+<center><img src="{{ site.baseurl }}/img/blog/cx-hiring-image-4.png" style="width:450px"></center>
 
 Though we had initially advertised 30 vacancies for this announcement, changing priorities due to COVID, resulted in 15 available vacancies to fill at the participating agencies. Of the 44 qualified applicants, thus far 22 offers have been extended with 17 acceptances to date. This includes selections from three agencies who did not originally sign up to participate in this government-wide effort. The remaining applicants will remain available for selection for a full year and work is starting on a shared certificate platform to encourage this practice.
 

@@ -74,7 +74,7 @@ Orienting ourselves to the general process (as described in layer two of the hol
 
 We were fortunate to work with an outstanding team, many of whom have done previous design work serving veterans, to build the critical first layer described above (qualitative customer data). One to two hour interviews with 25 veterans in this profile, along with interviews with 18 stakeholders across 6 agencies, 10 subject matter experts, and Veterans Service Organizations, produced hundreds of pages of transcripts full of stories, insights, and patterns about the employment experience and associated support. We are excited to share the result of this work – a map of the transition from military service employment to employment in the civilian labor market.
 
-<a href="{{  site.baseurl  }}/cx/Journey_Map/Service_Member_Transition_to_Civilian_Employment_Journey_Map.pdf" target="_blank"><img src="{{ site.baseurl }}/img/blog/cx-map.jpg"></a>
+<a href="{{  site.baseurl  }}/cx/assets/files/Service_Member_Transition_to_Civilian_Employment_Journey_Map.pdf" target="_blank"><img src="{{ site.baseurl }}/img/blog/cx-map.jpg"></a>
 <center><em style="font-size: 12px">This pilot maps the cross-government journey of service members transitioning to civilian employment.  </em></center>
 
 This journey map is a composite of the experiences of the people we spoke with, and shows the steps and support as they articulated them. This map has four sections:
@@ -100,8 +100,8 @@ It does not need to be a formal, top-down effort. Consider simply enlisting a fe
 We look forward to providing additional updates in this space – you can follow our work at [performance.gov/cx/](http://www.performance.gov/cx/).
 
 *Resource Links*
-- <a href="{{ site.baseurl }}/cx/Journey_Map/Service_Member_Transition_to_Civilian_Employment_Journey_Map_Guide.pdf" target="_blank">Service Member Transition to Civilian Employment Journey Map Guide</a>
-- <a href="{{ site.baseurl }}/cx/Journey_Map/Service_Member_Transition_to_Civilian_Employment_Journey_Map.pdf" target="_blank">Service Member Transition to Civilian Employment Journey Map</a>
-- <a href="{{ site.baseurl }}/cx/Journey_Map/Workshop_Guide_for_Federal_Agencies.pdf" target="_blank">Workshop Guide for Federal Agencies</a>
-- <a href="{{ site.baseurl }}/cx/Journey_Map/Project_Report.pdf" target="_blank">Project Report</a>
-- <a href="{{ site.baseurl }}/cx/Journey_Map/Human_Centered_Design_Discovery_Stage_Field_Guide.pdf" target="_blank">Human Centered Design Discovery Stage Field Guide</a>
+- <a href="{{ site.baseurl }}/cx/assets/files/Service_Member_Transition_to_Civilian_Employment_Journey_Map_Guide.pdf" target="_blank">Service Member Transition to Civilian Employment Journey Map Guide</a>
+- <a href="{{ site.baseurl }}/cx/assets/files/Service_Member_Transition_to_Civilian_Employment_Journey_Map.pdf" target="_blank">Service Member Transition to Civilian Employment Journey Map</a>
+- <a href="{{ site.baseurl }}/cx/assets/files/Workshop_Guide_for_Federal_Agencies.pdf" target="_blank">Workshop Guide for Federal Agencies</a>
+- <a href="{{ site.baseurl }}/cx/assets/files/Project_Report.pdf" target="_blank">Project Report</a>
+- <a href="{{ site.baseurl }}/cx/assets/files/Human_Centered_Design_Discovery_Stage_Field_Guide.pdf" target="_blank">Human Centered Design Discovery Stage Field Guide</a>

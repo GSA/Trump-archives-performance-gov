@@ -24,7 +24,7 @@ resource-3-name: 2019 State of Government-wide CX
 resource-3-url: https://www.performance.gov/improving-cx-governmentwide
 
 resource-4-name: HISP Highlights
-resource-4-url: https://www.performance.gov/cx/HISP-placemat.pdf
+resource-4-url: https://www.performance.gov/cx/assets/files/HISP-placemat.pdf
 
 resource-5-name: US Forms System Library
 resource-5-url: https://github.com/usds/us-forms-system

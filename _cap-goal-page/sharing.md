@@ -20,12 +20,22 @@ resource-4-url: https://ussm.gsa.gov/m3/
 resource-5-name: Federal Integrated Business Framework
 resource-5-url: https://ussm.gsa.gov/fibf/
 
+resource-6-name: Quality Service Management Offices
+resource-6-url: https://ussm.gsa.gov/qsmo
+
+resource-7-name: Frequently Asked Questions
+resource-7-url: https://ussm.gsa.gov/assets/files/SQS-Public-FAQs-April-2020.pdf
+
+#use this section if you want to highlight something other than the quarterly action plan
+featured-box: Follow this work
+featured-box-url: https://ussm.gsa.gov/
+featured-box-button: Go to website
 
 #***********************FLOATING BOX SECTION*****************************
 quote: "Shared services will create efficiencies in government and optimize the workforce by shifting resources to higher value work and reducing duplication across agencies " #appears in the gray text box
 quote-author: OMB Memo-19-16
 font-size: 17px
-current-action-plan: "/CAP/action_plans/jan_2021_Sharing_Quality_Services.pdf"
+current-action-plan: "https://ussm.gsa.gov/"
 #***********************FLOATING BOX SECTION*****************************
 
 #***********************ACCORDION SECTION*****************************

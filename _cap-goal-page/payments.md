@@ -27,10 +27,7 @@ resource-6-url:  https://soundcloud.com/user-478171638/episode-11-omb-circular-a
 resource-7-name: The President’s 2020 Budget - Analytical Perspectives - Payment Integrity Chapter
 resource-7-url:  https://www.whitehouse.gov/wp-content/uploads/2019/03/ap_9_integrity-fy2020.pdf
 
-#use this section if you want to highlight something other than the quarterly action plan
-featured-box: Follow this work
-featured-box-url: https://www.paymentaccuracy.gov/ 
-featured-box-button: Go to website
+
 
 
 #***********************FLOATING BOX SECTION*****************************

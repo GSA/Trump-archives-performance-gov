@@ -1,4 +1,4 @@
- ---
+---
 layout: cap-goal-page
 
 title: "Results-Oriented Accountability for Grants" #page title

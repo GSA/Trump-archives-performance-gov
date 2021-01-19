@@ -15,6 +15,11 @@ cap-icon: "/img/CAP_icons/Icon_Modernize_Infrastructure_gray.png" #icon that app
 resource-2-name: Permitting Dashboard
 resource-2-url:  https://www.permits.performance.gov/
 
+#use this section if you want to highlight something other than the quarterly action plan
+featured-box: Follow this work
+featured-box-url: https://www.permits.performance.gov/
+featured-box-button: Go to website
+
 #***********************FLOATING BOX SECTION*****************************
 quote: "We're working to make a cultural change in the permitting process, by applying predictability, accountability, and transparency to what has been an impenetrable black box." #appears in the gray text box
 quote-author: "Alex Herrgott, Goal Leader"

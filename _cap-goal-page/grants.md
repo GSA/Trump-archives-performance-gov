@@ -57,9 +57,9 @@ innovation-title:
 CFR: yes
 
 #use this section if you want to highlight something other than the quarterly action plan
-featured-box: View the New Revisions to Grants Guidance (2 CFR)
-featured-box-url: https://www.federalregister.gov/documents/2020/08/13/2020-17468/guidance-for-grants-and-agreements
-featured-box-button: View
+featured-box: Follow this work
+featured-box-url: https://www.grants.gov/
+featured-box-button: Go to website
 
 #***********************FLOATING BOX SECTION*****************************
 quote: "Federal Grant Programs support activities that touch every American, such

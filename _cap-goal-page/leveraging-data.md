@@ -29,9 +29,9 @@ resource-7-url: https://resources.data.gov/assets/documents/data-innovation-even
 
 
 #use this section if you want to highlight something other than the quarterly action plan
-featured-box: Follow this work
-featured-box-url: https://www.data.gov/ 
-featured-box-button: Go to website
+featured-box: Federal Data Strategy 2020 Action Plan
+featured-box-url: https://strategy.data.gov/action-plan/ 
+featured-box-button: Read the Action Plan
 
 #***********************FLOATING BOX SECTION*****************************
 quote: "Using data in a new and collaborative manner will drive ideas, spur innovation, and solve important problems."

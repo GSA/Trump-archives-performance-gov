@@ -27,8 +27,6 @@ $(function() {
 		});
 
 	}
-	});
-	$(function() {
 
 	//SMOOTH accordion
 	var Accordion = function(el, multiple) {

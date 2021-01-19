@@ -38,11 +38,6 @@ resource-7-url: https://www.performance.gov/mapping-cx-journey/
 resource-8-name: Tips for Starting on your CX Journey
 resource-8-url: https://www.performance.gov/tips-for-starting-your-customer-experience-journey/
 
-#use this section if you want to highlight something other than the quarterly action plan
-featured-box: Follow this work
-featured-box-url: https://www.performance.gov/cx/ 
-featured-box-button: Go to website
-
 #***********************FLOATING BOX SECTION*****************************
 quote: "Federal customers deserve an experience that compares to—or exceeds—that of leading private sector organizations."  #appears in the gray text box
 quote-author: "President's Management Agenda"

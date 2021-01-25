@@ -11,7 +11,7 @@ redirect_from: "/CAP/CAP_goal_6.html"
 
 #use this section if you want to highlight something other than the quarterly action plan
 featured-box: Burden Reduction Update Shows Progress Toward Leaner Government
-featured-box-url: https://www.performance.gov/burden-reduction/
+featured-box-url: https://trumpadministration.archives.performance.gov/burden-reduction/
 featured-box-button: Learn More
 #end featured section
 
@@ -30,16 +30,16 @@ resource-3-name: M-17-26, Reducing Burden for Federal Agencies by Rescinding and
 resource-3-url: https://www.whitehouse.gov/sites/whitehouse.gov/files/omb/memoranda/2017/M-17-26.pdf
 
 resource-4-name: Elimination of Unnecessary Agency Reports
-resource-4-url: https://www.performance.gov/elimination/elimination_of_unnecessary_agency_reports.html
+resource-4-url: https://trumpadministration.archives.performance.gov/elimination/elimination_of_unnecessary_agency_reports.html
 
 resource-5-name: HUD.gov
 resource-5-url: https://www.hud.gov/
 
 resource-6-name: PMA One Year of Progress
-resource-6-url: https://www.performance.gov/PMA/PMA-One-Year-of-Progress.pdf
+resource-6-url: https://trumpadministration.archives.performance.gov/PMA/PMA-One-Year-of-Progress.pdf
 
 resource-7-name: Burden Reduction Update
-resource-7-url: https://www.performance.gov/burden-reduction/
+resource-7-url: https://trumpadministration.archives.performance.gov/burden-reduction/
 
 
 

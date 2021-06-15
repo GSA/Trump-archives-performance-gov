@@ -47,7 +47,7 @@ featured-box-button: Go to website
 quote: "Federal customers deserve an experience that compares to—or exceeds—that of leading private sector organizations."  #appears in the gray text box
 quote-author: "President's Management Agenda"
 font-size: 20px
-current-action-plan: "/CAP/action_plans/september_2020_Improving_Customer_Experience.pdf"
+current-action-plan: "https://assets.performance.gov/archives/action_plans/september_2020_Improving_Customer_Experience.pdf"
 #***********************FLOATING BOX SECTION*****************************
 
 #***********************ACCORDION SECTION*****************************
@@ -58,19 +58,19 @@ challenge: "Citizens and businesses expect well-designed, efficient government s
 
 opportunity: "There are opportunities to: increase trust in the Federal Government by improving the experience citizens and businesses have with federal services across all delivery channels; transform the customer experience by improving the usability and reliability of our government’s most critical digital services; and, create measurable improvements in customer satisfaction by using the principles and practices proven by leading private-sector organizations." #third accordion text
 
-action-2021-january: "/CAP/action_plans/jan_2021_CX.pdf"
-action-2020-september: "/CAP/action_plans/september_2020_Improving_Customer_Experience.pdf"
-action-2020-july: "/CAP/action_plans/july_2020_Improving_Customer_Experience.pdf"
+action-2021-january: "https://assets.performance.gov/archives/action_plans/jan_2021_CX.pdf"
+action-2020-september: "https://assets.performance.gov/archives/action_plans/september_2020_Improving_Customer_Experience.pdf"
+action-2020-july: "https://assets.performance.gov/archives/action_plans/july_2020_Improving_Customer_Experience.pdf"
 
-action-2019-june: "/CAP/action_plans/june_2019_Improving_Customer_Experience.pdf"
-action-2019-september: "/CAP/action_plans/sept_2019_Improving_Customer_Experience.pdf"
-action-2019-december: "/CAP/action_plans/dec_2019_Improving_Customer_Experience.pdf"
+action-2019-june: "https://assets.performance.gov/archives/action_plans/june_2019_Improving_Customer_Experience.pdf"
+action-2019-september: "https://assets.performance.gov/archives/action_plans/sept_2019_Improving_Customer_Experience.pdf"
+action-2019-december: "https://assets.performance.gov/archives/action_plans/dec_2019_Improving_Customer_Experience.pdf"
 
 
-action-2018-Q1: "/CAP/action_plans/FY2018_Q1_Improving_Customer_Experience.pdf"
-action-2018-Q2: "/CAP/action_plans/FY2018_Q2_Improving_Customer_Experience.pdf"
-action-2018-Q3: "/CAP/action_plans/FY2018_Q3_Improving_Customer_Experience.pdf"
-action-2018-Q4: "/CAP/action_plans/FY2018_Q4_Improving_Customer_Experience.pdf"
+action-2018-Q1: "https://assets.performance.gov/archives/action_plans/FY2018_Q1_Improving_Customer_Experience.pdf"
+action-2018-Q2: "https://assets.performance.gov/archives/action_plans/FY2018_Q2_Improving_Customer_Experience.pdf"
+action-2018-Q3: "https://assets.performance.gov/archives/action_plans/FY2018_Q3_Improving_Customer_Experience.pdf"
+action-2018-Q4: "https://assets.performance.gov/archives/action_plans/FY2018_Q4_Improving_Customer_Experience.pdf"
 
 #***********************END ACCORDION SECTION*****************************
 

@@ -47,7 +47,7 @@ resource-7-url: https://trumpadministration.archives.performance.gov/burden-redu
 quote: "The Office of Management and Budget continues to identify existing guidance that should be rescinded or modified, to free agency resources for the pursuit of mission outcomes." #appears in the gray text box
 quote-author: "President's Management Agenda"
 font-size: 16.5px
-current-action-plan: "/CAP/action_plans/september_2020_Low-Value_to_High-Value_Work_UpdatedVersion.pdf"
+current-action-plan: "https://assets.performance.gov/archives/action_plans/september_2020_Low-Value_to_High-Value_Work_UpdatedVersion.pdf"
 
 #***********************FLOATING BOX SECTION*****************************
 
@@ -58,18 +58,18 @@ challenge: "All Federal Agencies are charged with effective stewardship of taxpa
 
 opportunity: "Federal Agencies can identify and streamline operational processes to improve the pursuit of mission outcomes and increase the effectiveness and efficiency of Government. " #third accordion text
 
-action-2021-january: "/CAP/action_plans/jan_2021_Low-Value_to_High-Value_Work.pdf"
-action-2020-september: "/CAP/action_plans/september_2020_Low-Value_to_High-Value_Work_UpdatedVersion.pdf"
-action-2020-july: "/CAP/action_plans/july_2020_Low-Value_to_High-Value_Work_UpdatedVersion.pdf"
+action-2021-january: "https://assets.performance.gov/archives/action_plans/jan_2021_Low-Value_to_High-Value_Work.pdf"
+action-2020-september: "https://assets.performance.gov/archives/action_plans/september_2020_Low-Value_to_High-Value_Work_UpdatedVersion.pdf"
+action-2020-july: "https://assets.performance.gov/archives/action_plans/july_2020_Low-Value_to_High-Value_Work_UpdatedVersion.pdf"
 
-action-2019-june: "/CAP/action_plans/june_2019_Low-Value_to_High-Value_Work_UpdatedVersion.pdf"
-action-2019-september: "/CAP/action_plans/sept_2019_Low-Value_to_High-Value_Work_UpdatedVersion.pdf"
-action-2019-december: "/CAP/action_plans/dec_2019_Low-Value_to_High-Value_Work_UpdatedVersion.pdf"
+action-2019-june: "https://assets.performance.gov/archives/action_plans/june_2019_Low-Value_to_High-Value_Work_UpdatedVersion.pdf"
+action-2019-september: "https://assets.performance.gov/archives/action_plans/sept_2019_Low-Value_to_High-Value_Work_UpdatedVersion.pdf"
+action-2019-december: "https://assets.performance.gov/archives/action_plans/dec_2019_Low-Value_to_High-Value_Work_UpdatedVersion.pdf"
 
-action-2018-Q1: "/CAP/action_plans/FY2018_Q1_Shifting_From_Low-Value_to_High-Value_Work.pdf"
-action-2018-Q2: "/CAP/action_plans/FY2018_Q2_Shifting_From_Low-Value_to_High-Value_Work.pdf"
-action-2018-Q3: "/CAP/action_plans/FY2018_Q3_Shifting_From_Low-Value_to_High-Value_Work.pdf"
-action-2018-Q4: "/CAP/action_plans/FY2018_Q4_Shifting_From_Low-Value_to_High-Value_Work.pdf"
+action-2018-Q1: "https://assets.performance.gov/archives/action_plans/FY2018_Q1_Shifting_From_Low-Value_to_High-Value_Work.pdf"
+action-2018-Q2: "https://assets.performance.gov/archives/action_plans/FY2018_Q2_Shifting_From_Low-Value_to_High-Value_Work.pdf"
+action-2018-Q3: "https://assets.performance.gov/archives/action_plans/FY2018_Q3_Shifting_From_Low-Value_to_High-Value_Work.pdf"
+action-2018-Q4: "https://assets.performance.gov/archives/action_plans/FY2018_Q4_Shifting_From_Low-Value_to_High-Value_Work.pdf"
 
 #***********************END ACCORDION SECTION*****************************
 

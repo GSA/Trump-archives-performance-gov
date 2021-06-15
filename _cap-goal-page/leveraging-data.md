@@ -37,7 +37,7 @@ featured-box-button: Go to website
 quote: "Using data in a new and collaborative manner will drive ideas, spur innovation, and solve important problems."
 quote-author: "Pradeep Belur, SBA Official"
 font-size: 20px
-current-action-plan: "/CAP/action_plans/september_2020_Data_Accountability_Transparency.pdf"
+current-action-plan: "https://assets.performance.gov/archives/action_plans/september_2020_Data_Accountability_Transparency.pdf"
 #***********************FLOATING BOX SECTION*****************************
 
 #***********************ACCORDION SECTION*****************************
@@ -49,19 +49,19 @@ challenge: "The use of data is transforming society, business, and the economy. 
 opportunity: "There are opportunities to: develop a long-term, enterprise-wide Federal Data Strategy to better govern and leverage the Federal Government’s data; enable government data to be accessible and useful for the American public, businesses, and researchers; improve the use of data for decision-making and accountability for the Federal Government, including for policy-making, innovation, oversight, and learning."
 #action plan links
 
-action-2021-january: "/CAP/action_plans/jan_2021_Data_Accountability_Transparency.pdf"
-action-2020-september: "/CAP/action_plans/september_2020_Data_Accountability_Transparency.pdf"
-action-2020-july: "/CAP/action_plans/july_2020_Data_Accountability_Transparency.pdf"
+action-2021-january: "https://assets.performance.gov/archives/action_plans/jan_2021_Data_Accountability_Transparency.pdf"
+action-2020-september: "https://assets.performance.gov/archives/action_plans/september_2020_Data_Accountability_Transparency.pdf"
+action-2020-july: "https://assets.performance.gov/archives/action_plans/july_2020_Data_Accountability_Transparency.pdf"
 
-action-2019-june: "/CAP/action_plans/june_2019_Data_Accountability_Transparency.pdf"
-action-2019-september: "/CAP/action_plans/sept_2019_Data_Accountability_Transparency.pdf"
-action-2019-december: "/CAP/action_plans/dec_2019_Data_Accountability_Transparency.pdf"
+action-2019-june: "https://assets.performance.gov/archives/action_plans/june_2019_Data_Accountability_Transparency.pdf"
+action-2019-september: "https://assets.performance.gov/archives/action_plans/sept_2019_Data_Accountability_Transparency.pdf"
+action-2019-december: "https://assets.performance.gov/archives/action_plans/dec_2019_Data_Accountability_Transparency.pdf"
 
 
-action-2018-Q1: "/CAP/action_plans/FY2018_Q1_Data_Accountability_Transparency.pdf"
-action-2018-Q2: "/CAP/action_plans/FY2018_Q2_Data_Accountability_Transparency.pdf"
-action-2018-Q3: "/CAP/action_plans/FY2018_Q3_Data_Accountability_Transparency.pdf"
-action-2018-Q4: "/CAP/action_plans/FY2018_Q4_Data_Accountability_Transparency.pdf"
+action-2018-Q1: "https://assets.performance.gov/archives/action_plans/FY2018_Q1_Data_Accountability_Transparency.pdf"
+action-2018-Q2: "https://assets.performance.gov/archives/action_plans/FY2018_Q2_Data_Accountability_Transparency.pdf"
+action-2018-Q3: "https://assets.performance.gov/archives/action_plans/FY2018_Q3_Data_Accountability_Transparency.pdf"
+action-2018-Q4: "https://assets.performance.gov/archives/action_plans/FY2018_Q4_Data_Accountability_Transparency.pdf"
 
 #***********************HIGHLIGHTS SECTION - INCLUDES NEWS AND EVENTS*****************************
 tag: "data"

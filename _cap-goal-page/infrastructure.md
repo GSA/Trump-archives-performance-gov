@@ -23,7 +23,7 @@ featured-box-button: Go to website
 #***********************FLOATING BOX SECTION*****************************
 quote: "We're working to make a cultural change in the permitting process, by applying predictability, accountability, and transparency to what has been an impenetrable black box." #appears in the gray text box
 quote-author: "Alex Herrgott, Goal Leader"
-current-action-plan: "/CAP/action_plans/jan_2021_Modernize_Infrastructure_Permitting.pdf"
+current-action-plan: "https://assets.performance.gov/archives/action_plans/jan_2021_Modernize_Infrastructure_Permitting.pdf"
 #***********************FLOATING BOX SECTION*****************************
 
 #***********************ACCORDION SECTION*****************************
@@ -33,18 +33,18 @@ challenge: "The American people rely on infrastructure improvements to benefit o
 
 opportunity: "Opportunity to: Improving the Federal environmental review and authorization process will enable infrastructure project sponsors to start construction sooner, create jobs earlier, and fix our Nation’s infrastructure faster while also ensuring that a project’s potential impacts on environmental and community resources are considered and managed throughout the planning process and infrastructure investment strengthens our economic platform, makes America more competitive, creates jobs, increases wages for American workers, and reduces the costs of goods and services for American families and consumers." #third accordion text
 
-action-2021-january: "/CAP/action_plans/jan_2021_Modernize_Infrastructure_Permitting.pdf"
-action-2020-september: "/CAP/action_plans/september_2020_Modernize_Infrastructure_Permitting.pdf"
-action-2020-july: "/CAP/action_plans/july_2020_Modernize_Infrastructure_Permitting.pdf"
+action-2021-january: "https://assets.performance.gov/archives/action_plans/jan_2021_Modernize_Infrastructure_Permitting.pdf"
+action-2020-september: "https://assets.performance.gov/archives/action_plans/september_2020_Modernize_Infrastructure_Permitting.pdf"
+action-2020-july: "https://assets.performance.gov/archives/action_plans/july_2020_Modernize_Infrastructure_Permitting.pdf"
 
-action-2019-june: "/CAP/action_plans/june_2019_Modernize_Infrastructure_Permitting.pdf"
-action-2019-september: "/CAP/action_plans/sept_2019_Modernize_Infrastructure_Permitting.pdf"
-action-2019-december: "/CAP/action_plans/dec_2019_Modernize_Infrastructure_Permitting.pdf"
+action-2019-june: "https://assets.performance.gov/archives/action_plans/june_2019_Modernize_Infrastructure_Permitting.pdf"
+action-2019-september: "https://assets.performance.gov/archives/action_plans/sept_2019_Modernize_Infrastructure_Permitting.pdf"
+action-2019-december: "https://assets.performance.gov/archives/action_plans/dec_2019_Modernize_Infrastructure_Permitting.pdf"
 
-action-2018-Q1: "/CAP/action_plans/FY2018_Q1_Modernize_Infrastructure_Permitting.pdf"
-action-2018-Q2: "/CAP/action_plans/FY2018_Q2_Modernize_Infrastructure_Permitting.pdf"
-action-2018-Q3: "/CAP/action_plans/FY2018_Q3_Modernize_Infrastructure_Permitting.pdf"
-action-2018-Q4: "/CAP/action_plans/FY2018_Q4_Modernize_Infrastructure_Permitting.pdf"
+action-2018-Q1: "https://assets.performance.gov/archives/action_plans/FY2018_Q1_Modernize_Infrastructure_Permitting.pdf"
+action-2018-Q2: "https://assets.performance.gov/archives/action_plans/FY2018_Q2_Modernize_Infrastructure_Permitting.pdf"
+action-2018-Q3: "https://assets.performance.gov/archives/action_plans/FY2018_Q3_Modernize_Infrastructure_Permitting.pdf"
+action-2018-Q4: "https://assets.performance.gov/archives/action_plans/FY2018_Q4_Modernize_Infrastructure_Permitting.pdf"
 
 #***********************END ACCORDION SECTION*****************************
 

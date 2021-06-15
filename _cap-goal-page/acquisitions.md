@@ -41,7 +41,7 @@ resource-8-url: https://www.performance.gov/CAP/Frictionless-Acquisition-Resourc
 quote: "We must reduce the costly lag between when our customers identify needs and when they receive solutions." #appears in the gray text box
 quote-author: "Michael Wooten, Goal Leader"
 font-size: 16px
-current-action-plan: "/CAP/action_plans/jan_2021_Frictionless_Acquisition.pdf"
+current-action-plan: "https://assets.performance.gov/archives/action_plans/jan_2021_Frictionless_Acquisition.pdf"
 #***********************FLOATING BOX SECTION*****************************
 
 #***********************ACCORDION SECTION*****************************
@@ -66,20 +66,20 @@ opportunity: "Agencies will leverage advanced technology & best commercial & pub
  <li>75% of acquisition employees feel empowered and enabled to innovate on behalf of the taxpayers they serve.</li>
  </ul> " #third accordion text
 
-action-2021-january: "/CAP/action_plans/jan_2021_Frictionless_Acquisition.pdf"
-action-2020-september: "/CAP/action_plans/september_2020_Frictionless_Acquisition.pdf"
-action-2020-july: "/CAP/action_plans/july_2020_Frictionless_Acquisition.pdf"
+action-2021-january: "https://assets.performance.gov/archives/action_plans/jan_2021_Frictionless_Acquisition.pdf"
+action-2020-september: "https://assets.performance.gov/archives/action_plans/september_2020_Frictionless_Acquisition.pdf"
+action-2020-july: "https://assets.performance.gov/archives/action_plans/july_2020_Frictionless_Acquisition.pdf"
 
 
-action-2019-june: "/CAP/action_plans/june_2019_Improve_Management_of_Major_Acquisitions.pdf"
-action-2019-september: "/CAP/action_plans/sept_2019_Improve_Management_of_Major_Acquisitions.pdf"
-action-2019-december: "/CAP/action_plans/dec_2019_Improve_Management_of_Major_Acquisitions.pdf"
+action-2019-june: "https://assets.performance.gov/archives/action_plans/june_2019_Improve_Management_of_Major_Acquisitions.pdf"
+action-2019-september: "https://assets.performance.gov/archives/action_plans/sept_2019_Improve_Management_of_Major_Acquisitions.pdf"
+action-2019-december: "https://assets.performance.gov/archives/action_plans/dec_2019_Improve_Management_of_Major_Acquisitions.pdf"
 
 
-action-2018-Q1: "/CAP/action_plans/FY2018_Q1_Improve_Management_of_Major_Acquisitions.pdf"
-action-2018-Q2: "/CAP/action_plans/FY2018_Q2_Improve_Management_of_Major_Acquisitions.pdf"
-action-2018-Q3: "/CAP/action_plans/FY2018_Q3_Improve_Management_of_Major_Acquisitions.pdf"
-action-2018-Q4: "/CAP/action_plans/FY2018_Q4_Improve_Management_of_Major_Acquisitions.pdf"
+action-2018-Q1: "https://assets.performance.gov/archives/action_plans/FY2018_Q1_Improve_Management_of_Major_Acquisitions.pdf"
+action-2018-Q2: "https://assets.performance.gov/archives/action_plans/FY2018_Q2_Improve_Management_of_Major_Acquisitions.pdf"
+action-2018-Q3: "https://assets.performance.gov/archives/action_plans/FY2018_Q3_Improve_Management_of_Major_Acquisitions.pdf"
+action-2018-Q4: "https://assets.performance.gov/archives/action_plans/FY2018_Q4_Improve_Management_of_Major_Acquisitions.pdf"
 
 #***********************END ACCORDION SECTION*****************************
 

@@ -27,7 +27,7 @@ resource-5-url: https://community.max.gov/pages/viewpage.action?spaceKey=HHS&tit
 quote: "The mission demands a federal workforce that's flexible and resilient enough to accommodate the ever-changing nature of work. And it must bring out the best in civil servants." #appears in the gray text box
 quote-author: "Peter Warren"
 font-size: 16.5px
-current-action-plan: "/CAP/action_plans/jan_2021_People_Workforce_for_the_21st_Century.pdf"
+current-action-plan: "https://assets.performance.gov/archives/action_plans/jan_2021_People_Workforce_for_the_21st_Century.pdf"
 #***********************FLOATING BOX SECTION*****************************
 
 #***********************ACCORDION SECTION*****************************
@@ -37,19 +37,19 @@ challenge: "The challenges include: parts of today’s personnel system are a re
 
 opportunity: "To achieve a state where Federal agencies and managers can hire the best employees, remove low-performing employees, and engage employees at all levels of the organization, the Government must put a framework in place that drives and encourages strategic human capital management." #third accordion text
 
-action-2021-january: "/CAP/action_plans/jan_2021_People_Workforce_for_the_21st_Century.pdf"
-action-2020-september: "/CAP/action_plans/september_2020_People_Workforce_for_the_21st_Century.pdf"
-action-2020-july: "/CAP/action_plans/july_2020_People_Workforce_for_the_21st_Century.pdf"
+action-2021-january: "https://assets.performance.gov/archives/action_plans/jan_2021_People_Workforce_for_the_21st_Century.pdf"
+action-2020-september: "https://assets.performance.gov/archives/action_plans/september_2020_People_Workforce_for_the_21st_Century.pdf"
+action-2020-july: "https://assets.performance.gov/archives/action_plans/july_2020_People_Workforce_for_the_21st_Century.pdf"
 
-action-2019-june: "/CAP/action_plans/june_2019_People_Workforce_for_the_21st_Century.pdf"
-action-2019-september: "/CAP/action_plans/sept_2019_People_Workforce_for_the_21st_Century.pdf"
-action-2019-december: "/CAP/action_plans/dec_2019_People_Workforce_for_the_21st_Century.pdf"
+action-2019-june: "https://assets.performance.gov/archives/action_plans/june_2019_People_Workforce_for_the_21st_Century.pdf"
+action-2019-september: "https://assets.performance.gov/archives/action_plans/sept_2019_People_Workforce_for_the_21st_Century.pdf"
+action-2019-december: "https://assets.performance.gov/archives/action_plans/dec_2019_People_Workforce_for_the_21st_Century.pdf"
 
 
-action-2018-Q1: "/CAP/action_plans/FY2018_Q1_People_Workforce_for_the_21st_Century.pdf"
-action-2018-Q2: "/CAP/action_plans/FY2018_Q2_People_Workforce_for_the_21st_Century.pdf"
-action-2018-Q3: "/CAP/action_plans/FY2018_Q3_People_Workforce_for_the_21st_Century.pdf"
-action-2018-Q4: "/CAP/action_plans/FY2018_Q4_People_Workforce_for_the_21st_Century.pdf"
+action-2018-Q1: "https://assets.performance.gov/archives/action_plans/FY2018_Q1_People_Workforce_for_the_21st_Century.pdf"
+action-2018-Q2: "https://assets.performance.gov/archives/action_plans/FY2018_Q2_People_Workforce_for_the_21st_Century.pdf"
+action-2018-Q3: "https://assets.performance.gov/archives/action_plans/FY2018_Q3_People_Workforce_for_the_21st_Century.pdf"
+action-2018-Q4: "https://assets.performance.gov/archives/action_plans/FY2018_Q4_People_Workforce_for_the_21st_Century.pdf"
 
 #***********************END ACCORDION SECTION*****************************
 

@@ -26,7 +26,7 @@ resource-4-url: https://tech.gsa.gov/playbooks/tbm/
 quote: "Improving IT spend transparency is critical to improving business end-to-end, from the idea to the acquisition to what we actually deliver." #appears in the gray text box
 quote-author: "Suzette Kent, Goal Leader"
 font-size: 19px
-current-action-plan: "/CAP/action_plans/dec_2019_Federal_IT_Spending_Transparency.pdf"
+current-action-plan: "https://assets.performance.gov/archives/action_plans/dec_2019_Federal_IT_Spending_Transparency.pdf"
 #***********************FLOATING BOX SECTION*****************************
 
 #***********************ACCORDION SECTION*****************************
@@ -40,14 +40,14 @@ The FY 2018 President’s Budget reported 84% of the total Federal IT budget cat
 opportunity: "The Technology Business Management (TBM) Framework will enable the Federal Government to:   run IT like a business; drive innovation and business transformation; improve services to citizens; add cost transparency; and increase accountability to taxpayers. " #third accordion text
 
 
-action-2019-june: "/CAP/action_plans/june_2019_Federal_IT_Spending_Transparency.pdf"
-action-2019-september: "/CAP/action_plans/sept_2019_Federal_IT_Spending_Transparency.pdf"
-action-2019-december: "/CAP/action_plans/dec_2019_Federal_IT_Spending_Transparency.pdf"
+action-2019-june: "https://assets.performance.gov/archives/action_plans/june_2019_Federal_IT_Spending_Transparency.pdf"
+action-2019-september: "https://assets.performance.gov/archives/action_plans/sept_2019_Federal_IT_Spending_Transparency.pdf"
+action-2019-december: "https://assets.performance.gov/archives/action_plans/dec_2019_Federal_IT_Spending_Transparency.pdf"
 
-action-2018-Q1: "/CAP/action_plans/FY2018_Q1_Federal_IT_Spending_Transparency.pdf"
-action-2018-Q2: "/CAP/action_plans/FY2018_Q2_Federal_IT_Spending_Transparency.pdf"
-action-2018-Q3: "/CAP/action_plans/FY2018_Q3_Federal_IT_Spending_Transparency.pdf"
-action-2018-Q4: "/CAP/action_plans/FY2018_Q4_Federal_IT_Spending_Transparency.pdf"
+action-2018-Q1: "https://assets.performance.gov/archives/action_plans/FY2018_Q1_Federal_IT_Spending_Transparency.pdf"
+action-2018-Q2: "https://assets.performance.gov/archives/action_plans/FY2018_Q2_Federal_IT_Spending_Transparency.pdf"
+action-2018-Q3: "https://assets.performance.gov/archives/action_plans/FY2018_Q3_Federal_IT_Spending_Transparency.pdf"
+action-2018-Q4: "https://assets.performance.gov/archives/action_plans/FY2018_Q4_Federal_IT_Spending_Transparency.pdf"
 
 #***********************END ACCORDION SECTION*****************************
 

@@ -66,7 +66,7 @@ quote: "Federal Grant Programs support activities that touch every American, suc
 as medical research, education, transportation infrastructure, and more." #appears in the gray text box
 quote-author: "President's Management Agenda"
 font-size: 17.5px
-current-action-plan: "/CAP/action_plans/jan_2021_Results-Oriented_Accountability_for_Grants.pdf"
+current-action-plan: "https://assets.performance.gov/archives/action_plans/jan_2021_Results-Oriented_Accountability_for_Grants.pdf"
 #***********************FLOATING BOX SECTION*****************************
 
 #***********************ACCORDION SECTION*****************************
@@ -76,19 +76,19 @@ challenge: "The Federal government uses grants to invest approximately $700 bill
 
 opportunity: "Standardize the grants management business process and identify, open, standardize, and link data. Use standard business process and data to establish a robust marketplace of modern solutions that ease burden and drive efficiencies, respond to customer needs, and deliver on mission. Leverage data, including data produced by annual audits, to assess and manage recipient risk. Hold recipients accountable for good performance practices that support achievement of program goals and objectives and streamline burdensome compliance requirements for those that demonstrate results." #third accordion text
 
-action-2021-january: "/CAP/action_plans/jan_2021_Results-Oriented_Accountability_for_Grants.pdf"
-action-2020-september: "/CAP/action_plans/september_2020_Results-Oriented_Accountability_for_Grants.pdf"
-action-2020-july: "/CAP/action_plans/july_2020_Results-Oriented_Accountability_for_Grants.pdf"
+action-2021-january: "https://assets.performance.gov/archives/action_plans/jan_2021_Results-Oriented_Accountability_for_Grants.pdf"
+action-2020-september: "https://assets.performance.gov/archives/action_plans/september_2020_Results-Oriented_Accountability_for_Grants.pdf"
+action-2020-july: "https://assets.performance.gov/archives/action_plans/july_2020_Results-Oriented_Accountability_for_Grants.pdf"
 
-action-2019-june: "/CAP/action_plans/june_2019_Results-Oriented_Accountability_for_Grants.pdf"
-action-2019-september: "/CAP/action_plans/sept_2019_Results-Oriented_Accountability_for_Grants.pdf"
-action-2019-december: "/CAP/action_plans/dec_2019_Results-Oriented_Accountability_for_Grants.pdf"
+action-2019-june: "https://assets.performance.gov/archives/action_plans/june_2019_Results-Oriented_Accountability_for_Grants.pdf"
+action-2019-september: "https://assets.performance.gov/archives/action_plans/sept_2019_Results-Oriented_Accountability_for_Grants.pdf"
+action-2019-december: "https://assets.performance.gov/archives/action_plans/dec_2019_Results-Oriented_Accountability_for_Grants.pdf"
 
 
-action-2018-Q1: "/CAP/action_plans/FY2018_Q1_Results-Oriented_Accountability_for_Grants.pdf"
-action-2018-Q2: "/CAP/action_plans/FY2018_Q2_Results-Oriented_Accountability_for_Grants.pdf"
-action-2018-Q3: "/CAP/action_plans/FY2018_Q3_Results-Oriented_Accountability_for_Grants.pdf"
-action-2018-Q4: "/CAP/action_plans/FY2018_Q4_Results-Oriented_Accountability_for_Grants.pdf"
+action-2018-Q1: "https://assets.performance.gov/archives/action_plans/FY2018_Q1_Results-Oriented_Accountability_for_Grants.pdf"
+action-2018-Q2: "https://assets.performance.gov/archives/action_plans/FY2018_Q2_Results-Oriented_Accountability_for_Grants.pdf"
+action-2018-Q3: "https://assets.performance.gov/archives/action_plans/FY2018_Q3_Results-Oriented_Accountability_for_Grants.pdf"
+action-2018-Q4: "https://assets.performance.gov/archives/action_plans/FY2018_Q4_Results-Oriented_Accountability_for_Grants.pdf"
 
 
 #***********************END ACCORDION SECTION*****************************

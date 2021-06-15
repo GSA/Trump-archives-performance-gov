@@ -50,18 +50,18 @@ opportunity: "Improve the efficiency and effectiveness of the Federal
 government’s mission support services in the short and long term, leading
 to improved performance, customer experience, and operational costs. " #third accordion text
 
-action-2021-january: "/CAP/action_plans/jan_2021_Sharing_Quality_Services.pdf"
-action-2020-september: "/CAP/action_plans/september_2020_Sharing_Quality_Services.pdf"
-action-2020-july: "/CAP/action_plans/july_2020_Sharing_Quality_Services.pdf"
+action-2021-january: "https://assets.performance.gov/archives/action_plans/jan_2021_Sharing_Quality_Services.pdf"
+action-2020-september: "https://assets.performance.gov/archives/action_plans/september_2020_Sharing_Quality_Services.pdf"
+action-2020-july: "https://assets.performance.gov/archives/action_plans/july_2020_Sharing_Quality_Services.pdf"
 
-action-2019-june: "/CAP/action_plans/june_2019_Sharing_Quality_Services.pdf"
-action-2019-september: "/CAP/action_plans/sept_2019_Sharing_Quality_Services.pdf"
-action-2019-december: "/CAP/action_plans/dec_2019_Sharing_Quality_Services.pdf"
+action-2019-june: "https://assets.performance.gov/archives/action_plans/june_2019_Sharing_Quality_Services.pdf"
+action-2019-september: "https://assets.performance.gov/archives/action_plans/sept_2019_Sharing_Quality_Services.pdf"
+action-2019-december: "https://assets.performance.gov/archives/action_plans/dec_2019_Sharing_Quality_Services.pdf"
 
-action-2018-Q1: "/CAP/action_plans/FY2018_Q1_Sharing_Quality_Services.pdf"
-action-2018-Q2: "/CAP/action_plans/FY2018_Q2_Sharing_Quality_Services.pdf"
-action-2018-Q3: "/CAP/action_plans/FY2018_Q3_Sharing_Quality_Services.pdf"
-action-2018-Q4: "/CAP/action_plans/FY2018_Q4_Sharing_Quality_Services.pdf"
+action-2018-Q1: "https://assets.performance.gov/archives/action_plans/FY2018_Q1_Sharing_Quality_Services.pdf"
+action-2018-Q2: "https://assets.performance.gov/archives/action_plans/FY2018_Q2_Sharing_Quality_Services.pdf"
+action-2018-Q3: "https://assets.performance.gov/archives/action_plans/FY2018_Q3_Sharing_Quality_Services.pdf"
+action-2018-Q4: "https://assets.performance.gov/archives/action_plans/FY2018_Q4_Sharing_Quality_Services.pdf"
 
 #***********************END ACCORDION SECTION*****************************
 

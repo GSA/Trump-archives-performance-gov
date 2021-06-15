@@ -37,7 +37,7 @@ featured-box-button: Go to website
 quote: "Historically, the Federal Government has focused on improper payments broadly, including process errors that do not affect money paid, rather than strategically targeting monetary loss to taxpayers." #appears in the gray text box
 quote-author: "President's Management Agenda"
 font-size: 16px
-current-action-plan: "/CAP/action_plans/jan_2021_Getting_Payments_Right.pdf"
+current-action-plan: "https://assets.performance.gov/archives/action_plans/jan_2021_Getting_Payments_Right.pdf"
 #***********************FLOATING BOX SECTION*****************************
 
 #***********************ACCORDION SECTION*****************************
@@ -51,18 +51,18 @@ opportunity-bullet-1: "To improve the efficiencies of government programs by foc
 
 opportunity-bullet-2: "Build trust in government by better understanding the nature of improper payments and their relationship to payment integrity."
 
-action-2021-january: "/CAP/action_plans/jan_2021_Getting_Payments_Right.pdf"
-action-2020-september: "/CAP/action_plans/september_2020_Getting_Payments_Right.pdf"
-action-2020-july: "/CAP/action_plans/july_2020_Getting_Payments_Right.pdf"
+action-2021-january: "https://assets.performance.gov/archives/action_plans/jan_2021_Getting_Payments_Right.pdf"
+action-2020-september: "https://assets.performance.gov/archives/action_plans/september_2020_Getting_Payments_Right.pdf"
+action-2020-july: "https://assets.performance.gov/archives/action_plans/july_2020_Getting_Payments_Right.pdf"
 
-action-2019-june: "/CAP/action_plans/june_2019_Getting_Payments_Right.pdf"
-action-2019-september: "/CAP/action_plans/sept_2019_Getting_Payments_Right.pdf"
-action-2019-december: "/CAP/action_plans/dec_2019_Getting_Payments_Right.pdf"
+action-2019-june: "https://assets.performance.gov/archives/action_plans/june_2019_Getting_Payments_Right.pdf"
+action-2019-september: "https://assets.performance.gov/archives/action_plans/sept_2019_Getting_Payments_Right.pdf"
+action-2019-december: "https://assets.performance.gov/archives/action_plans/dec_2019_Getting_Payments_Right.pdf"
 
-action-2018-Q1: "/CAP/action_plans/FY2018_Q1_Getting_Payments_Right.pdf"
-action-2018-Q2: "/CAP/action_plans/FY2018_Q2_Getting_Payments_Right.pdf"
-action-2018-Q3: "/CAP/action_plans/FY2018_Q3_Getting_Payments_Right.pdf"
-action-2018-Q4: "/CAP/action_plans/FY2018_Q4_Getting_Payments_Right.pdf"
+action-2018-Q1: "https://assets.performance.gov/archives/action_plans/FY2018_Q1_Getting_Payments_Right.pdf"
+action-2018-Q2: "https://assets.performance.gov/archives/action_plans/FY2018_Q2_Getting_Payments_Right.pdf"
+action-2018-Q3: "https://assets.performance.gov/archives/action_plans/FY2018_Q3_Getting_Payments_Right.pdf"
+action-2018-Q4: "https://assets.performance.gov/archives/action_plans/FY2018_Q4_Getting_Payments_Right.pdf"
 
 #***********************END ACCORDION SECTION*****************************
 
